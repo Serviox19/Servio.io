@@ -1,19 +1,15 @@
-
-/********  Import all Partials  *******/
-
-
 /*********************************
    Reset / Base
 *********************************/
 @import "{}/imports/ui/sass/base/reset.scss";
 @import "{}/imports/ui/sass/base/variables.scss";
-
+@import "{}/imports/ui/sass/base/typeography.scss";
 
 
 /*********************************
    Components
 *********************************/
-
+@import "{}/imports/ui/sass/components/header.scss";
 
 
 
