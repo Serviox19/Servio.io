@@ -1,3 +1,4 @@
+
 .header {
   display: flex;
   flex-direction: row;
@@ -14,19 +15,30 @@
     color: #FEFEFE;
     align-items: center;
 
+    h2 {
+      align-self: center;
+      font-size: 1.3em;
+      letter-spacing: 0.8em;
+      text-transform: uppercase;
+      line-height: inherit;
+      text-align: center;
+      padding: 1em;
+    }
+
     .link {
-      width: 125px;
-      height: 50px;
-      line-height: 50px;
-      border: solid 2px #000;
+      width: 150px;
+      height: 45px;
+      line-height: 45px;
+      border: solid 3px #000;
       background: #FFF;
       color: #000;
       text-align: center;
-      margin-top: 1em;
+      margin-top: 2em;
+      text-decoration: none;
 
       &:hover {
         background: #000;
-        border: solid 2px #FFF;
+        border: solid 3px #FFF;
         color: #FFF;
         transition: hover 0.7s ease;
         cursor: pointer;
@@ -35,7 +47,7 @@
   }
 
   .arrow-link {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     margin: 0 auto;
     color: #FFF;
