@@ -1,4 +1,6 @@
 
+$balloon-border: #FFF;
+
 .header {
   display: flex;
   flex-direction: row;
@@ -8,6 +10,100 @@
   justify-content: center;
   align-items: center;
   background: #333;
+
+
+  .helicopter_wrapper {
+    position: absolute;
+    top: 3em;
+    left: 2em;
+    animation: glide 5.5s linear infinite;
+
+    /* Balloon */
+
+    .balloon {
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+      width: 100px;
+      position: absolute;
+      left: -1.8em;
+      bottom: -2em;
+      color: #eee;
+    }
+
+    .balloon::before, .balloon::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 20px;
+    }
+
+    .balloon::after {
+      height: 30px;
+    }
+
+    .balloon.right {
+      border-left: solid 3px $balloon-border;
+      border-top: solid 3px $balloon-border;
+      border-bottom: solid 3px $balloon-border;
+      border-radius: 8px 0 8px 8px;
+    }
+
+    .balloon.right::before {
+      border-top: solid 3px $balloon-border;
+      right: -20px;
+      top: -3px;
+    }
+
+    .balloon.right::after {
+      border-left: solid 3px $balloon-border;
+      border-top: solid 3px $balloon-border;
+      border-top-left-radius: 3px;
+      right: -20px;
+      top: 3px;
+      transform: skew(-0deg,-30deg);
+    }
+
+    .helicopter {
+      position: relative;
+      left: 75%;
+      animation-duration: 1s;
+      animation-name: float;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+      animation-play-state: running;
+
+
+      .blade {
+      	position: absolute;
+      	top: 0px;
+      	left: 31px;
+        animation-duration: 0.2s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-play-state: running;
+      }
+      .tailblade {
+      	width: 3px;
+      	height: 7px;
+      	background-color: black;
+      	position: absolute;
+      	top: 9px;
+      	left: 10px;
+        transform-origin: 50% 100%;
+      	animation-duration: .1s;
+        animation-name: tailblade;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-play-state: running;
+      }
+    }
+  } /* End Helicopter Wrapper */
+
+
 
   .header-items {
     display: flex;
@@ -54,6 +150,54 @@
     -moz-animation: bounce .7s infinite ease;
     -webkit-animation: bounce .7s infinite ease;
     cursor: pointer;
+  }
+
+  /** KeyFrames **/
+
+  @keyframes spin {
+    from {
+      transform:rotateY(0deg);
+    }
+
+    to {
+       transform:rotateY(-360deg);
+    }
+  }
+
+  @keyframes tailblade {
+    from {
+      transform:rotate3d(0,0,1,0deg);
+    }
+
+    to {
+       transform:rotate3d(0,0,1,-360deg);
+    }
+  }
+  @keyframes float {
+    from {
+      transform:translateY(10px) rotate3d(0,0,1,5deg);
+    }
+
+    to {
+       transform:translateY(-8px) rotate3d(0,0,1,-2deg);
+    }
+  }
+  @keyframes glide {
+    0% {
+      left: 12%;
+    }
+    30% {
+      left: 28%;
+    }
+    50% {
+      left: 45%;
+    }
+    75% {
+      left: 70%;
+    }
+    95% {
+      left: 95%;
+    }
   }
 
   @-moz-keyframes bounce {

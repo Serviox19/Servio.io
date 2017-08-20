@@ -4,7 +4,7 @@ class Bio extends Component {
   render() {
     return (
       <div className="bio">
-        <h3>Bio!</h3>
+        <h1>Who Am I?</h1>
       </div>
     );
   }
