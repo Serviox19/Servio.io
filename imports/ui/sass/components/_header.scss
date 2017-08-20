@@ -1,5 +1,5 @@
 
-$balloon-border: #FFF;
+$balloon-border: #333;
 
 .header {
   display: flex;
@@ -9,7 +9,7 @@ $balloon-border: #FFF;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: #333;
+  background: #eee;
 
 
   .helicopter_wrapper {
@@ -27,9 +27,13 @@ $balloon-border: #FFF;
       text-align: center;
       width: 100px;
       position: absolute;
-      left: -1.8em;
-      bottom: -2em;
-      color: #eee;
+      left: -1.3em;
+      bottom: -2.08em;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
     }
 
     .balloon::before, .balloon::after {
@@ -108,7 +112,7 @@ $balloon-border: #FFF;
   .header-items {
     display: flex;
     flex-direction: column;
-    color: #FEFEFE;
+    color: #000;
     align-items: center;
 
     h2 {
@@ -146,7 +150,7 @@ $balloon-border: #FFF;
     position: absolute;
     bottom: 0;
     margin: 0 auto;
-    color: #FFF;
+    color: #000;
     -moz-animation: bounce .7s infinite ease;
     -webkit-animation: bounce .7s infinite ease;
     cursor: pointer;
@@ -176,6 +180,7 @@ $balloon-border: #FFF;
   @keyframes float {
     from {
       transform:translateY(10px) rotate3d(0,0,1,5deg);
+      transform-origin: 0% 100%;
     }
 
     to {

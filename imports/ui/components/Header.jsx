@@ -8,7 +8,7 @@ class Header extends Component {
       <div className="header">
         <div className="helicopter_wrapper">
           <div className="balloon right">
-            Hire Me!
+            <a href="">Hire Me!</a>
           </div>
           <div className="helicopter">
             <img className="helicopter_body" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/20212/bladeless_helicopter.png" alt="Helicopter with no blades" />
