@@ -14,9 +14,9 @@ $balloon-border: #333;
 
   .helicopter_wrapper {
     position: absolute;
-    top: 3em;
-    left: 2em;
-    animation: glide 6.5s linear infinite;
+    top: 2em;
+    left: -8% !important;
+    animation: glide 7.5s linear infinite;
 
     /* Balloon */
 
@@ -71,7 +71,8 @@ $balloon-border: #333;
 
     .helicopter {
       position: relative;
-      left: 75%;
+      top: -0.2em;
+      left: 19%;
       animation-duration: 1s;
       animation-name: float;
       animation-iteration-count: infinite;
@@ -184,24 +185,21 @@ $balloon-border: #333;
        transform:translateY(-8px) rotate3d(0,0,1,-2deg);
     }
   }
-  @keyframes glide {
+  @-webkit-keyframes glide {
     0% {
-      left: 4%;
+      left: -5%;
     }
-    15% {
-      left: 15%;
+    100% {
+      left: 105%;
     }
-    30% {
-      left: 30%;
+  }
+
+  @-moz-keyframes glide {
+    0% {
+      left: -5%;
     }
-    50% {
-      left: 45%;
-    }
-    75% {
-      left: 70%;
-    }
-    95% {
-      left: 95%;
+    100% {
+      left: 105%;
     }
   }
 
