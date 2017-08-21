@@ -17,9 +17,7 @@ class Header extends Component {
           </div>
         </div>
         <div className="header-items">
-          <h2>Servio Mora</h2>
-          <h2>Full Stack Web Developer</h2>
-          <a href="" className="link">Hire Me</a>
+          <h2>Servio Mora <br /> Full Stack Web Developer</h2>
         </div>
         <span className="arrow-link">
           <a><i className="material-icons" style={{fontSize:48}}>arrow_downward</i></a>

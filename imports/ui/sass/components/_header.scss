@@ -16,7 +16,7 @@ $balloon-border: #333;
     position: absolute;
     top: 3em;
     left: 2em;
-    animation: glide 5.5s linear infinite;
+    animation: glide 6.5s linear infinite;
 
     /* Balloon */
 
@@ -116,33 +116,18 @@ $balloon-border: #333;
     align-items: center;
 
     h2 {
+      overflow: hidden;
+      margin: 0 auto;
+      border-right: .15em solid orange; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
       align-self: center;
       font-size: 1.3em;
       letter-spacing: 0.8em;
       text-transform: uppercase;
-      line-height: inherit;
+      line-height: 2.5em;
       text-align: center;
-      padding: 1em;
-    }
-
-    .link {
-      width: 150px;
-      height: 45px;
-      line-height: 45px;
-      border: solid 3px #000;
-      background: #FFF;
-      color: #000;
-      text-align: center;
-      margin-top: 2em;
-      text-decoration: none;
-
-      &:hover {
-        background: #000;
-        border: solid 3px #FFF;
-        color: #FFF;
-        transition: hover 0.7s ease;
-        cursor: pointer;
-      }
+      animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
     }
   }
 
@@ -157,6 +142,18 @@ $balloon-border: #333;
   }
 
   /** KeyFrames **/
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 
   @keyframes spin {
     from {
@@ -189,10 +186,13 @@ $balloon-border: #333;
   }
   @keyframes glide {
     0% {
-      left: 12%;
+      left: 4%;
+    }
+    15% {
+      left: 15%;
     }
     30% {
-      left: 28%;
+      left: 30%;
     }
     50% {
       left: 45%;
