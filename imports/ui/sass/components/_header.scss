@@ -5,7 +5,7 @@ $balloon-border: #333;
   display: flex;
   flex-direction: row;
   background: #eee;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@ $balloon-border: #333;
     position: absolute;
     top: 2em;
     left: -8% !important;
-    animation: glide 7.5s linear infinite;
+    animation: glide 12s linear infinite;
 
     /* Balloon */
 
@@ -115,6 +115,7 @@ $balloon-border: #333;
     flex-direction: column;
     color: #000;
     align-items: center;
+    max-width: 90% !important;
 
     h2 {
       overflow: hidden;
@@ -128,7 +129,7 @@ $balloon-border: #333;
       text-transform: uppercase;
       line-height: 2.5em;
       text-align: center;
-      animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+      animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
     }
   }
 
@@ -136,6 +137,7 @@ $balloon-border: #333;
     position: absolute;
     bottom: 0;
     margin: 0 auto;
+    margin: 0 auto !important;
     color: #000;
     -moz-animation: bounce .7s infinite ease;
     -webkit-animation: bounce .7s infinite ease;
