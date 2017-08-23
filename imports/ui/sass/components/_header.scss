@@ -5,7 +5,7 @@ $balloon-border: #333;
   display: flex;
   flex-direction: row;
   background: #eee;
-  width: 100%;
+  width: 100% !important;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -119,10 +119,9 @@ $balloon-border: #333;
 
     h2 {
       overflow: hidden;
-      margin: 0 auto;
       border-right: .15em solid orange; /* The typwriter cursor */
       white-space: nowrap; /* Keeps the content on a single line */
-      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      margin: 0 auto !important; /* Gives that scrolling effect as the typing happens */
       align-self: center;
       font-size: 1.3em;
       letter-spacing: 0.8em;
@@ -131,13 +130,18 @@ $balloon-border: #333;
       text-align: center;
       animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
     }
+
+    @media screen and (max-width: 500px) {
+      h2 {
+        letter-spacing: normal !important;
+      }
+    }
   }
 
   .arrow-link {
     position: absolute;
-    bottom: 0;
-    margin: 0 auto;
-    margin: 0 auto !important;
+    bottom: 0 !important;
+    left: 50% !important;
     color: #000;
     -moz-animation: bounce .7s infinite ease;
     -webkit-animation: bounce .7s infinite ease;
