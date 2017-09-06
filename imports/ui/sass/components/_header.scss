@@ -139,9 +139,8 @@ $balloon-border: #333;
   }
 
   .arrow-link {
-    position: fixed;
-    bottom: 0px !important;
-    margin: 0 auto !important;
+    position: absolute;
+    left: 49%;
     color: #000;
     -moz-animation: bounce .7s infinite ease;
     -webkit-animation: bounce .7s infinite ease;
