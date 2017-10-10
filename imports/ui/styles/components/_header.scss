@@ -1,5 +1,4 @@
 
-$balloon-border: #333;
 
 .header {
   display: flex;
@@ -61,53 +60,6 @@ $balloon-border: #333;
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
-  }
-
-  @keyframes spin {
-    from {
-      transform:rotateY(0deg);
-    }
-
-    to {
-       transform:rotateY(-360deg);
-    }
-  }
-
-  @keyframes tailblade {
-    from {
-      transform:rotate3d(0,0,1,0deg);
-    }
-
-    to {
-       transform:rotate3d(0,0,1,-360deg);
-    }
-  }
-  @keyframes float {
-    from {
-      transform:translateY(10px) rotate3d(0,0,1,5deg);
-      transform-origin: 0% 100%;
-    }
-
-    to {
-       transform:translateY(-8px) rotate3d(0,0,1,-2deg);
-    }
-  }
-  @-webkit-keyframes glide {
-    0% {
-      left: -5%;
-    }
-    100% {
-      left: 105%;
-    }
-  }
-
-  @-moz-keyframes glide {
-    0% {
-      left: -5%;
-    }
-    100% {
-      left: 105%;
-    }
   }
 
   @-moz-keyframes bounce {

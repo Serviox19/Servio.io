@@ -2,9 +2,9 @@
    Reset / Base
 *********************************/
 @import "{}/imports/ui/styles/base/reset.scss";
-@import "{}/imports/ui/styles/base/global.scss";
 @import "{}/imports/ui/styles/base/variables.scss";
 @import "{}/imports/ui/styles/base/typeography.scss";
+@import "{}/imports/ui/styles/base/global.scss";
 
 
 /*********************************
@@ -20,3 +20,8 @@
 *********************************/
 @import "{}/imports/ui/styles/pages/home.scss";
 @import "{}/imports/ui/styles/pages/resume.scss";
+
+
+/*********************************
+  All Responsive Styles Here
+*********************************/
