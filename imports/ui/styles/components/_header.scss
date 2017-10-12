@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   background: #eee;
+  font-family: 'Open Sans', sans-serif;
 
   .header-items {
     display: flex;
@@ -24,6 +25,7 @@
       margin: 0 auto !important; /* Gives that scrolling effect as the typing happens */
       align-self: center;
       font-size: 1.3em;
+      font-weight: 600;
       letter-spacing: 0.8em;
       text-transform: uppercase;
       line-height: 2.5em;

@@ -1,8 +1,10 @@
+
 .intro-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
   margin-top: 75px;
+  font-family: 'Open Sans', sans-serif;
 
   .block {
     width: 30%;
@@ -24,21 +26,28 @@
       display: inline-block;
       position: absolute;
       top: 1em;
-      left: 80%;
+      left: 75%;
       width: fit-content;
+      font-size: 20px;
+
+      h2 {
+        font-weight: 600;
+      }
     }
   }
 
   .about {
-    margin-top: 4em;
+    margin-top: 4.5em;
 
     .title {
       text-align: center;
       margin-bottom: 1em;
+      font-weight: 600;
     }
 
     h2 {
       margin-bottom: 0.5em;
+      font-weight: 600;
     }
 
     p {
@@ -47,11 +56,72 @@
   }
 
   .info {
+    padding-top: 2em;
     justify-content: space-around;
+    max-height: 350px;
+
+    h2 {
+      font-weight: 600;
+    }
 
     p {
       line-height: 1.5em;
       text-align: center;
+    }
+  }
+}
+
+.exp-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  font-family: 'Open Sans', sans-serif;
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+      position: relative;
+      font-weight: 600;
+
+      &::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #231F20;
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+      }
+    }
+  }
+
+  .work {
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    margin: 0 auto;
+
+    h1 {
+      padding-left: 3em;
+      position: relative;
+      width: 100%;
+      font-weight: 600;
+
+      &::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #231F20;
+        position: absolute;
+        bottom: -2rem;
+        right: 0;
+      }
     }
   }
 }

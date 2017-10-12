@@ -24,10 +24,18 @@ class Resume extends Component {
               <h2>Address</h2>
               <p>32 Merrill Rd, Clifton NJ 07012</p>
               <h2>Contact</h2>
-              <p><span>servio.mora19@gmail.com</span> <br /> <span>973-934-5297</span></p>
-              <a target="_blank" href="">www.servio.io</a>
+              <p><span>servio.mora19@gmail.com</span> <br /> <span>github.com/erviox19</span> <br /> <span>973-934-5297</span></p>
+              <a target="_blank" href="http://servio.io">www.servio.io</a>
             </div>
-          </div>
+          </div> {/* end intro-wrapper */}
+          <div className="exp-wrapper">
+            <div className="education">
+              <h1>Education</h1>
+            </div>
+            <div className="work">
+              <h1>Work Experience</h1>
+            </div>
+          </div> {/* end exp-wrapper */}
         </div>
       </div>
     );
