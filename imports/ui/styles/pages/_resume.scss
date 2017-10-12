@@ -1,3 +1,9 @@
+/* Variables */
+
+
+
+/* ######### */
+
 
 .intro-wrapper {
   width: 100%;
@@ -52,12 +58,14 @@
 
     p {
       line-height: 1.6em;
+      text-align: justify;
     }
   }
 
   .info {
     padding-top: 2em;
     justify-content: space-around;
+    align-items: center;
     max-height: 350px;
 
     h2 {
@@ -65,7 +73,7 @@
     }
 
     p {
-      line-height: 1.5em;
+      line-height: 2em;
       text-align: center;
     }
   }
@@ -85,8 +93,12 @@
     width: 30%;
 
     .block {
-      line-height: 1.3em;
+      line-height: 1.7rem;
       margin-bottom: 50px;
+
+      .location {
+        color: #636466;
+      }
     }
 
     h1 {
@@ -138,7 +150,67 @@
       .block {
         width: 50%;
         margin-bottom: 50px;
-        line-height: 1.5em;
+        line-height: 1.7rem;
+
+        .location {
+          color: #636466;
+        }
+      }
+    }
+  }
+}
+
+.skills-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 75px;
+  font-family: 'Open Sans', sans-serif;
+
+  .personal {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    h1 {
+      text-align: center;
+      position: relative;
+      width: 100%;
+      font-weight: 600;
+      margin-bottom: 1.5em;
+
+      &::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #231F20;
+        position: absolute;
+        bottom: -2rem;
+        right: 0;
+      }
+    }
+  }
+
+  .professional {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    h1 {
+      position: relative;
+      width: 100%;
+      font-weight: 600;
+      margin-bottom: 1.5em;
+
+      &::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #231F20;
+        position: absolute;
+        bottom: -2rem;
+        right: 0;
       }
     }
   }

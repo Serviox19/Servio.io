@@ -1,9 +1,41 @@
 import React, { Component } from 'react';
 
 class Resume extends Component {
+
+
   componentDidMount() {
 
   }
+
+
+  skills() {
+    return [
+      {"name": "HTML & CSS", "percentage": ""},
+      {"name": "Javascript & jQuery", "percentage": ""},
+      {"name": "", "percentage": ""},
+      {"name": "", "percentage": ""},
+      {"name": "", "percentage": ""},
+      {"name": "", "percentage": ""},
+      {"name": "", "percentage": ""},
+      {"name": "", "percentage": ""},
+      {"name": "", "percentage": ""},
+      {"name": "", "percentage": ""},
+      {"name": "", "percentage": ""},
+      {"name": "", "percentage": ""}
+    ]
+  }
+
+  renderSkills() {
+    return this.skills().map((skill) => {
+      return (
+        <div className="skill">
+          <span><h2>{skill.percentage}</h2></span>
+          <p>{skill.name}</p>
+        </div>
+      );
+    });
+  }
+
 
   render() {
     return (
@@ -33,13 +65,13 @@ class Resume extends Component {
               <h1>Education</h1>
               <div className="block">
                 <h3>Rutgers University</h3>
-                <h5>Rutgers Coding Bootcamp, Full Stack Web Development</h5>
-                <p>New Brunswick NJ</p>
+                <h5>Rutgers Coding Bootcamp, Full Stack Web Dev.</h5>
+                <p className="location">New Brunswick NJ</p>
               </div>
               <div className="block">
                 <h3>Passaic County Communuty College</h3>
                 <h5>Associates Degree in Information Technology</h5>
-                <p>Passaic County NJ</p>
+                <p className="location">Passaic County NJ</p>
               </div>
             </div>
             <div className="work">
@@ -47,23 +79,37 @@ class Resume extends Component {
               <div className="wrapper">
                 <div className="block">
                   <h3>Full Stack Web Developer</h3>
-                  <h5>Ockupy Inc, May 2017 - Present</h5>
+                  <h5>Ockupy Inc,&nbsp;&nbsp;May 2017 - Present</h5>
+                  <p className="location">Edgewater NJ</p>
                 </div>
                 <div className="block">
                   <h3>Field Technician</h3>
-                  <h5>Databit, Oct. 2016 - April 2017</h5>
+                  <h5>Databit,&nbsp;&nbsp;Oct. 2016 - April 2017</h5>
+                  <p className="location">Mahwah NJ</p>
                 </div>
                 <div className="block">
                   <h3>Web Developer Intern</h3>
-                  <h5>Startup52</h5>
+                  <h5>Startup52,&nbsp;&nbsp;June - July 2016</h5>
+                  <p className="location">Brooklyn NY</p>
                 </div>
                 <div className="block">
                   <h3>Deployment Technician</h3>
-                  <h5>Valley National Bank, Dec. 2015 - Apr 2016</h5>
+                  <h5>Valley National Bank,&nbsp;&nbsp;Dec. 2015 - Apr 2016</h5>
+                  <p className="location">Wayne NJ</p>
                 </div>
               </div>
             </div>
           </div> {/* end exp-wrapper */}
+          <div className="skills-wrapper">
+            <div className="personal">
+              <h1>Personal Skills</h1>
+              <div className="wrapper"></div>
+            </div>
+            <div className="professional">
+              <h1>Professional Skills</h1>
+              <div className="wrapper"></div>
+            </div>
+          </div> {/* end skills-wrapper */}
         </div>
       </div>
     );
