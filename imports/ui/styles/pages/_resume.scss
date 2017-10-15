@@ -213,5 +213,58 @@
         right: 0;
       }
     }
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .skill {
+        width: 48%;
+        margin: 1.2em 0;
+        position: relative;
+
+        h2 {
+          margin-bottom: 10px;
+        }
+
+        .skill-name {
+          position: relative;
+          display: block;
+
+          &::after {
+            content: "";
+            background: #231F20;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+        }
+
+        .skill-track {
+          position: absolute;
+          background-color: #37FDFC;
+          left: 0;
+          right: 0;
+          bottom: 1px;
+          height: .9em;
+          z-index: -1;
+          transform-origin: left center;
+          animation: stat 1s forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes stat {
+  0% {
+    transform: translate3d(-100%, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0%, 0px, 0px);
   }
 }

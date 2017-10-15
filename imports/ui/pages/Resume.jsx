@@ -10,18 +10,18 @@ class Resume extends Component {
 
   skills() {
     return [
-      {"name": "HTML & CSS", "percentage": ""},
-      {"name": "Javascript & jQuery", "percentage": ""},
-      {"name": "", "percentage": ""},
-      {"name": "", "percentage": ""},
-      {"name": "", "percentage": ""},
-      {"name": "", "percentage": ""},
-      {"name": "", "percentage": ""},
-      {"name": "", "percentage": ""},
-      {"name": "", "percentage": ""},
-      {"name": "", "percentage": ""},
-      {"name": "", "percentage": ""},
-      {"name": "", "percentage": ""}
+      {"name": "HTML", "percentage": "95"},
+      {"name": "CSS & Sass", "percentage": "90"},
+      {"name": "Javascript & jQuery", "percentage": "80"},
+      {"name": "Angular", "percentage": "75"},
+      {"name": "Node", "percentage": "70"},
+      {"name": "React", "percentage": "80"},
+      {"name": "React Native", "percentage": "70"},
+      {"name": "Photoshop", "percentage": "60"},
+      {"name": "JSON", "percentage": "90"},
+      {"name": "PHP", "percentage": "50"},
+      {"name": "Git", "percentage": "85"},
+      {"name": "Wordpress", "percentage": "60"}
     ]
   }
 
@@ -30,7 +30,8 @@ class Resume extends Component {
       return (
         <div className="skill">
           <span><h2>{skill.percentage}</h2></span>
-          <p>{skill.name}</p>
+          <span className="skill-name">{skill.name}</span>
+          <span className="skill-track" style={{ width: skill.percentage +'%' }}></span>
         </div>
       );
     });
@@ -107,7 +108,9 @@ class Resume extends Component {
             </div>
             <div className="professional">
               <h1>Professional Skills</h1>
-              <div className="wrapper"></div>
+              <div className="wrapper">
+                {this.renderSkills()}
+              </div>
             </div>
           </div> {/* end skills-wrapper */}
         </div>
