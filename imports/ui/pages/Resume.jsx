@@ -10,25 +10,25 @@ class Resume extends Component {
 
   skills() {
     return [
-      {"name": "HTML", "percentage": "95"},
-      {"name": "CSS & Sass", "percentage": "90"},
-      {"name": "Javascript & jQuery", "percentage": "80"},
-      {"name": "Angular", "percentage": "75"},
-      {"name": "Node", "percentage": "70"},
-      {"name": "React", "percentage": "80"},
-      {"name": "React Native", "percentage": "70"},
-      {"name": "Photoshop", "percentage": "60"},
-      {"name": "JSON", "percentage": "90"},
-      {"name": "PHP", "percentage": "50"},
-      {"name": "Git", "percentage": "85"},
-      {"name": "Wordpress", "percentage": "60"}
+      {"_id": "1", "name": "HTML", "percentage": "95"},
+      {"_id": "2", "name": "CSS & Sass", "percentage": "90"},
+      {"_id": "3", "name": "Javascript & jQuery", "percentage": "78"},
+      {"_id": "4", "name": "Angular", "percentage": "70"},
+      {"_id": "5", "name": "Node", "percentage": "70"},
+      {"_id": "6", "name": "React", "percentage": "80"},
+      {"_id": "7", "name": "React Native", "percentage": "70"},
+      {"_id": "8", "name": "Photoshop", "percentage": "35"},
+      {"_id": "9", "name": "JSON", "percentage": "90"},
+      {"_id": "10", "name": "PHP", "percentage": "55"},
+      {"_id": "11", "name": "Git", "percentage": "85"},
+      {"_id": "12", "name": "Wordpress", "percentage": "60"}
     ]
   }
 
   renderSkills() {
     return this.skills().map((skill) => {
       return (
-        <div className="skill">
+        <div className="skill" key={skill._id}>
           <span><h2>{skill.percentage}</h2></span>
           <span className="skill-name">{skill.name}</span>
           <span className="skill-track" style={{ width: skill.percentage +'%' }}></span>
@@ -104,7 +104,37 @@ class Resume extends Component {
           <div className="skills-wrapper">
             <div className="personal">
               <h1>Personal Skills</h1>
-              <div className="wrapper"></div>
+              <h3><span className="highlight">Languages</span></h3>
+              <div className="wrapper">
+                <div className="skill">
+                  <span><h2>98</h2></span>
+                  <span className="skill-name">English</span>
+                  <span className="skill-track" style={{ width: '98%' }}></span>
+                </div>
+                <div className="skill">
+                  <span><h2>90</h2></span>
+                  <span className="skill-name">Spanish</span>
+                  <span className="skill-track" style={{ width: '90%' }}></span>
+                </div>
+              </div>
+              <h3><span className="highlight">Work Skills</span></h3>
+              <div className="wrapper">
+                <div className="skill">
+                  <span><h2>80</h2></span>
+                  <span className="skill-name">Creativity</span>
+                  <span className="skill-track" style={{ width: '80%' }}></span>
+                </div>
+                <div className="skill">
+                  <span><h2>90</h2></span>
+                  <span className="skill-name">Innovate</span>
+                  <span className="skill-track" style={{ width: '90%' }}></span>
+                </div>
+                <div className="skill">
+                  <span><h2>95</h2></span>
+                  <span className="skill-name">Communication</span>
+                  <span className="skill-track" style={{ width: '95%' }}></span>
+                </div>
+              </div>
             </div>
             <div className="professional">
               <h1>Professional Skills</h1>
@@ -113,6 +143,21 @@ class Resume extends Component {
               </div>
             </div>
           </div> {/* end skills-wrapper */}
+          <div className="references">
+            <div className="wrapper">
+              <h1>References</h1>
+              <div className="block">
+                <h3>Aaron Dielman</h3>
+                <h5>Project Manager at Ockupy Inc</h5>
+                <p>(973)&nbsp;710-7077</p>
+              </div>
+              <div className="block">
+                <h3>Ivan Baena</h3>
+                <h5>Front End Developer at Bed Bath &amp; Beyond</h5>
+                <p>(201)&nbsp;657-9022</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

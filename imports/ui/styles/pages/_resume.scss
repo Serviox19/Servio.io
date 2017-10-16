@@ -1,6 +1,6 @@
 /* Variables */
 
-
+$highlight: #37FDFC;
 
 /* ######### */
 
@@ -46,9 +46,11 @@
     margin-top: 4.5em;
 
     .title {
+      background-color: $highlight;
       text-align: center;
       margin-bottom: 1em;
       font-weight: 600;
+      padding: 5px;
     }
 
     h2 {
@@ -113,7 +115,7 @@
         width: 100%;
         background: #231F20;
         position: absolute;
-        bottom: -2rem;
+        bottom: -1.5rem;
         left: 0;
       }
     }
@@ -136,7 +138,7 @@
         width: 100%;
         background: #231F20;
         position: absolute;
-        bottom: -2rem;
+        bottom: -1.5rem;
         right: 0;
       }
     }
@@ -173,6 +175,11 @@
     flex-direction: column;
     width: 30%;
 
+    .highlight {
+      background-color: $highlight;
+      padding: 3px;
+    }
+
     h1 {
       text-align: center;
       position: relative;
@@ -186,8 +193,53 @@
         width: 100%;
         background: #231F20;
         position: absolute;
-        bottom: -2rem;
+        bottom: -1.5rem;
         right: 0;
+      }
+    }
+
+    h3 {
+      margin: 1.2em 0;
+    }
+
+    .wrapper {
+
+      .skill {
+        width: 100%;
+        margin: 1.4em 0;
+        position: relative;
+
+        h2 {
+          margin-bottom: 10px;
+        }
+
+        .skill-name {
+          position: relative;
+          display: block;
+
+          &::after {
+            content: "";
+            background: #231F20;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+        }
+
+        .skill-track {
+          position: absolute;
+          background-color: $highlight;
+          padding: 3px;
+          left: 0;
+          right: 0;
+          bottom: 1px;
+          height: .9em;
+          z-index: -1;
+          transform-origin: left center;
+          animation: stat 1s forwards;
+        }
       }
     }
   }
@@ -209,7 +261,7 @@
         width: 100%;
         background: #231F20;
         position: absolute;
-        bottom: -2rem;
+        bottom: -1.5rem;
         right: 0;
       }
     }
@@ -221,7 +273,7 @@
       justify-content: space-between;
 
       .skill {
-        width: 48%;
+        width: 45%;
         margin: 1.2em 0;
         position: relative;
 
@@ -246,7 +298,8 @@
 
         .skill-track {
           position: absolute;
-          background-color: #37FDFC;
+          background-color: $highlight;
+          padding: 2px;
           left: 0;
           right: 0;
           bottom: 1px;
@@ -255,6 +308,49 @@
           transform-origin: left center;
           animation: stat 1s forwards;
         }
+      }
+    }
+  }
+}
+
+.references {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em 0;
+  font-family: 'Open Sans', sans-serif;
+
+  h1 {
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 1em;
+    text-align: center;
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background: #231F20;
+      position: absolute;
+      bottom: -1.5rem;
+      right: 0;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .block {
+      margin: 1em 0;
+
+      h3 {
+        margin-bottom: 0.5em;
+      }
+
+      h5 {
+        margin-bottom: 0.5em;
       }
     }
   }
