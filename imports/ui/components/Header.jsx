@@ -3,10 +3,24 @@ import { Helicopter } from './Helicopter';
 
 class Header extends Component {
 
-  render() {
+  componentDidMount() {
+    function spinner() {
+      $('.loader').css({ display: 'none' });
+      $('.header-items').css({ display: 'flex !important' });
+    }
+    setTimeout(spinner, 3000);
+  }
 
+
+  render() {
     return (
       <div className="header">
+        <div className="loader">
+          <div className="spinner">
+            <div className="double-bounce1"></div>
+            <div className="double-bounce2"></div>
+          </div>
+        </div>
         <Helicopter />
         <div className="header-items">
           <h2>Servio Mora <br /> Full Stack Web Developer</h2>
