@@ -6,7 +6,8 @@ class Header extends Component {
   componentDidMount() {
     function spinner() {
       $('.loader').css({ display: 'none' });
-      $('.header-items').css({ display: 'flex !important' });
+      $('.header-items > h2').css({ animationPlayState: 'running' });
+      $('.helicopter_wrapper').css({ animationPlayState: 'running' });
     }
     setTimeout(spinner, 3000);
   }
