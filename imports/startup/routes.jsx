@@ -6,6 +6,7 @@ import { mount } from 'react-mounter';
 
 import { App } from '../ui/layouts/App';
 import Home from '../ui/pages/Home';
+import Contact from '../ui/pages/Contact';
 import Resume from '../ui/pages/Resume';
 import Work from '../ui/pages/Work';
 
@@ -17,11 +18,11 @@ FlowRouter.route('/', {
   }
 });
 
-FlowRouter.route('/work', {
+FlowRouter.route('/contact', {
   action() {
     mount(App, {
-      content: <Work />
-    })
+      content: <Contact />
+    });
   }
 });
 
@@ -30,5 +31,13 @@ FlowRouter.route('/resume', {
     mount(App, {
       content: <Resume />
     });
+  }
+});
+
+FlowRouter.route('/work', {
+  action() {
+    mount(App, {
+      content: <Work />
+    })
   }
 });

@@ -6,55 +6,59 @@
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 
-  /* Balloon */
+  a {
+    text-decoration: none;
+    color: #000;
 
-  .balloon {
-    height: 40px;
-    line-height: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-    width: 100px;
-    position: absolute;
-    left: -1.3em;
-    bottom: -2.08em;
-
-    a {
-      text-decoration: none;
-      color: #000;
+    &:hover .balloon > p {
+      color: red;
     }
-  }
 
-  .balloon::before, .balloon::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 20px;
-  }
+    /* Balloon */
 
-  .balloon::after {
-    height: 30px;
-  }
+    .balloon {
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+      width: 100px;
+      position: absolute;
+      left: -1.3em;
+      bottom: -2.08em;
+    }
 
-  .balloon.right {
-    border-left: solid 3px $balloon-border;
-    border-top: solid 3px $balloon-border;
-    border-bottom: solid 3px $balloon-border;
-    border-radius: 8px 0 8px 8px;
-  }
+    .balloon::before, .balloon::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 20px;
+    }
 
-  .balloon.right::before {
-    border-top: solid 3px $balloon-border;
-    right: -20px;
-    top: -3px;
-  }
+    .balloon::after {
+      height: 30px;
+    }
 
-  .balloon.right::after {
-    border-left: solid 3px $balloon-border;
-    border-top: solid 3px $balloon-border;
-    border-top-left-radius: 3px;
-    right: -20px;
-    top: 3px;
-    transform: skew(-0deg,-30deg);
+    .balloon.right {
+      border-left: solid 3px $balloon-border;
+      border-top: solid 3px $balloon-border;
+      border-bottom: solid 3px $balloon-border;
+      border-radius: 8px 0 8px 8px;
+    }
+
+    .balloon.right::before {
+      border-top: solid 3px $balloon-border;
+      right: -20px;
+      top: -3px;
+    }
+
+    .balloon.right::after {
+      border-left: solid 3px $balloon-border;
+      border-top: solid 3px $balloon-border;
+      border-top-left-radius: 3px;
+      right: -20px;
+      top: 3px;
+      transform: skew(-0deg,-30deg);
+    }
   }
 
   .helicopter {

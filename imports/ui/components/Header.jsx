@@ -10,6 +10,15 @@ class Header extends Component {
       $('.helicopter_wrapper').css({ animationPlayState: 'running' });
     }
     setTimeout(spinner, 3000);
+
+    $('.helicopter_wrapper').mouseover(function () {
+      $(this).css({ animationPlayState: 'paused' });
+    });
+
+    $('.helicopter_wrapper').mouseout(function () {
+      $(this).css({ animationPlayState: 'running' });
+    });
+
   }
 
 
