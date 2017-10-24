@@ -82,8 +82,8 @@
       white-space: nowrap; /* Keeps the content on a single line */
       margin: 0 auto !important; /* Gives that scrolling effect as the typing happens */
       align-self: center;
-      font-size: 1.3em;
-      font-weight: 600;
+      font-size: 27px;
+      font-weight: 800;
       letter-spacing: 0.8em;
       text-transform: uppercase;
       line-height: 2.5em;
@@ -99,6 +99,14 @@
         letter-spacing: normal !important;
       }
     }
+  }
+
+  .animate {
+    background: url('/images/code.gif') center center no-repeat;
+    background-size: cover;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
   }
 
   .arrow-link {

@@ -6,10 +6,14 @@ class Header extends Component {
   componentDidMount() {
     function spinner() {
       $('.loader').css({ display: 'none' });
+      $('.about').css({ display: 'flex' });
       $('.header-items > h2').css({ animationPlayState: 'running' });
       $('.helicopter_wrapper').css({ animationPlayState: 'running' });
     }
     setTimeout(spinner, 3000);
+    setTimeout(() => {
+      $('.header-items').addClass('animate');
+    }, 7200);
 
     $('.helicopter_wrapper').mouseover(function () {
       $(this).css({ animationPlayState: 'paused' });
