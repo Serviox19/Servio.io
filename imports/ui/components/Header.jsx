@@ -22,7 +22,10 @@ class Header extends Component {
     $('.helicopter_wrapper').mouseout(function () {
       $(this).css({ animationPlayState: 'running' });
     });
+  }
 
+  componentWillUpdate() {
+    $('.loader').css({ display: 'none !important' });
   }
 
 

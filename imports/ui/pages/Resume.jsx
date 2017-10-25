@@ -55,7 +55,7 @@ class Resume extends Component {
             </div>
             <div className="block info">
               <h2>Address</h2>
-              <p>32 Merrill Rd, Clifton NJ 07012</p>
+              <p>Clifton NJ 07012</p>
               <h2>Contact</h2>
               <p><span>servio.mora19@gmail.com</span> <br /> <span><a target="_blank" href="http://github.com/serviox19">github.com/serviox19</a></span> <br /> <span>973-934-5297</span></p>
               <a target="_blank" href="http://servio.io">www.servio.io</a>
