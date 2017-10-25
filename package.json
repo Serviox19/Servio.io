@@ -13,7 +13,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-mounter": "^1.2.0",
-    "smooth-scrollbar": "^7.3.1"
+    "smooth-scrollbar": "^7.4.1"
   },
   "devDependencies": {
     "@meteorjs/eslint-config-meteor": "^1.0.5"

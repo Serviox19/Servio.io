@@ -10,7 +10,7 @@ Meteor.methods({
       Email.send({
         to: 'Servio Mora <servio.mora19@gmail.com>',
         from: `${message.name} ${message.email}`,
-        subject: `${message.name} sent you an Email!`,
+        subject: `${message.subject}`,
         text: `${message.message}`
       });
     });

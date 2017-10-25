@@ -3,7 +3,7 @@ import React from 'react';
 export const Helicopter = () => {
   return (
     <div className="helicopter_wrapper">
-      <a href="/contact">
+      <a href="#">
         <div className="balloon right">
           <p>Hire Me!</p>
         </div>

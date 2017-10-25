@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Helicopter } from './Helicopter';
+import Scrollbar from 'smooth-scrollbar';
 
 class Header extends Component {
 
@@ -28,6 +29,19 @@ class Header extends Component {
     $('.loader').css({ display: 'none !important' });
   }
 
+  handleArrowClick() {
+    var scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
+      'speed': '3.5',
+      'overscrollEffect':'bounce',
+      'damping':'.05'
+    });
+
+    scrollbar.scrollIntoView(document.querySelector('.about'), {
+      alignToTop: true,
+      offsetTop: 0
+    });
+  }
+
 
   render() {
     return (
@@ -42,7 +56,7 @@ class Header extends Component {
         <div className="header-items">
           <h2>Servio Mora <br /> Full Stack Web Developer</h2>
         </div>
-        <span className="arrow-link">
+        <span className="arrow-link" onClick={this.handleArrowClick.bind(this)}>
           <a><i className="material-icons" style={{fontSize:48}}>arrow_downward</i></a>
         </span>
       </div>
