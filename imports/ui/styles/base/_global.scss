@@ -1,3 +1,10 @@
 #home-page {
   height: 100vh;
 }
+
+.page-content-wrapper {
+  display: none;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}

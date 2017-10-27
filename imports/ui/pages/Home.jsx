@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import About from '../components/About';
+import Cases from '../components/Cases';
 import Scrollbar from 'smooth-scrollbar';
 
 class Home extends Component {
@@ -25,7 +26,10 @@ class Home extends Component {
     return (
       <div id="home-page">
         <Header />
-        <About />
+        <div className="page-content-wrapper">
+          <About />
+          <Cases />
+        </div>
       </div>
     );
   }
