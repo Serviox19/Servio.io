@@ -1,10 +1,19 @@
 #home-page {
   height: 100vh;
+
+  .load-wrapper {
+    display: none;
+    flex-direction: column;
+  }
 }
 
 .page-content-wrapper {
-  display: none;
+  display: flex;
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+body {
+  background-color: #F5F5F5;
 }

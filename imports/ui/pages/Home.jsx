@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
-import About from '../components/About';
-import Cases from '../components/Cases';
+import Header from '../components/Home/Header';
+import About from '../components/Home/About';
+import Cases from '../components/Home/Cases';
 import Scrollbar from 'smooth-scrollbar';
 
 class Home extends Component {
@@ -14,7 +14,7 @@ class Home extends Component {
     });
 
     scrollbar.addListener(function () {
-      console.log(scrollbar.offset);
+      console.log(scrollbar.offset.y);
     });
   }
 
@@ -26,7 +26,7 @@ class Home extends Component {
     return (
       <div id="home-page">
         <Header />
-        <div className="page-content-wrapper">
+        <div className="load-wrapper">
           <About />
           <Cases />
         </div>

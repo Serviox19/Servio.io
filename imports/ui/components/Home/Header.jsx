@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Helicopter } from './Helicopter';
+import { Helicopter } from '../Helicopter';
 import Scrollbar from 'smooth-scrollbar';
 
 class Header extends Component {
@@ -7,7 +7,7 @@ class Header extends Component {
   componentDidMount() {
     function spinner() {
       $('.loader').css({ display: 'none' });
-      $('.page-content-wrapper').css({ display: 'flex' });
+      $('.load-wrapper').css({ display: 'flex' });
       $('.header-items > h2').css({ animationPlayState: 'running' });
       $('.helicopter_wrapper').css({ animationPlayState: 'running' });
     }
