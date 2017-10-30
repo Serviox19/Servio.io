@@ -38,7 +38,7 @@ class Cases extends Component {
           </a>
           <a href="https://amcreditrepair.com/" target="_blank" className="case" style={{ backgroundImage: `url('/images/cases/am-credit.jpeg')` }}>
             <span className="overlay">
-              <div className="bg_img" style={{ backgroundColor: '#00C4CC' }}></div>
+              <div className="bg_img" style={{ backgroundColor: '#7CCCD2' }}></div>
             </span>
             <span className="logo">
               <img src="/images/logos/cropped-amcredit.png" />
