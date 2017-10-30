@@ -22,10 +22,10 @@ class ContactForm extends Component {
 
   handleSubmit(event) {
     this.state = { message: {
-      name: this.refs.name.value;
-      email: this.refs.email.value;
-      subject: this.refs.subject.value;
-      message: this.refs.message.value;
+      name: this.refs.name.value,
+      email: this.refs.email.value,
+      subject: this.refs.subject.value,
+      message: this.refs.message.value
     }};
 
     Meteor.call('sendEmail', this.state.message, (error) => {

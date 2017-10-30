@@ -33,7 +33,7 @@ class Cases extends Component {
               <div className="bg_img" style={{ backgroundColor: '#EF4639' }}></div>
             </span>
             <span className="logo">
-              <img src="/images/logos/cami-logo.jpg" />
+              <img src="/images/logos/cami_logo-black.png" />
             </span>
           </a>
           <a href="https://amcreditrepair.com/" target="_blank" className="case" style={{ backgroundImage: `url('/images/cases/am-credit.jpeg')` }}>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../components/Home/Header';
 import About from '../components/Home/About';
 import Cases from '../components/Home/Cases';
+import { Contact } from '../components/Home/Contact';
 import Scrollbar from 'smooth-scrollbar';
 
 class Home extends Component {
@@ -29,6 +30,7 @@ class Home extends Component {
         <div className="load-wrapper">
           <About />
           <Cases />
+          <Contact />
         </div>
       </div>
     );
