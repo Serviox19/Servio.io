@@ -7,20 +7,27 @@ import Scrollbar from 'smooth-scrollbar';
 
 class Home extends Component {
 
-  scrollBar() {
+  componentDidMount() {
     var scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
-      'speed': '3.5',
+      'speed': '3',
       'overscrollEffect':'bounce',
       'damping':'.05'
     });
 
     scrollbar.addListener(function () {
-      // console.log(scrollbar.offset.y);
+      if (scrollbar.offset.y >= 2000 ) {
+        $('#scrollTop').css({ display: 'flex' });
+      }
     });
   }
 
-  componentDidMount() {
-    this.scrollBar();
+  scrollTop() {
+    var scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
+      'speed': '3',
+      'overscrollEffect':'bounce',
+      'damping':'.05'
+    });
+    scrollbar.scrollTo(0,0, 1000);
   }
 
   render() {
@@ -32,6 +39,7 @@ class Home extends Component {
           <Cases />
           <Contact />
         </div>
+        <a id="scrollTop" onClick={this.scrollTop.bind(this)}><i className="material-icons" style={{fontSize:30}}>keyboard_arrow_up</i></a>
       </div>
     );
   }
