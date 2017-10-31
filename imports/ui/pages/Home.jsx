@@ -15,7 +15,7 @@ class Home extends Component {
     });
 
     scrollbar.addListener(function () {
-      console.log(scrollbar.offset.y);
+      // console.log(scrollbar.offset.y);
     });
   }
 

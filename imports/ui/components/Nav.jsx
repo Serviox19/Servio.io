@@ -9,7 +9,7 @@ class Nav extends Component {
   render() {
     return (
       <div>
-        <nav>
+        <nav id="navigation">
           <div className="wrapper">
             <ul>
               <li><a href="/">Home</a></li>

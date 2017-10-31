@@ -35,13 +35,13 @@ class ContactForm extends Component {
       let message = this.state.message.message;
 
       if (name === '') {
-
+        Bert.alert('Please Fill out all Fields!', 'danger');
       } else if (email === '') {
-
+        Bert.alert('Please Fill out all Fields!', 'danger');
       } else if (subject === '') {
-
+        Bert.alert('Please Fill out all Fields!', 'danger');
       } else if (message === '') {
-
+        Bert.alert('Please Fill out all Fields!', 'danger');
       } else if (error) {
         Bert.alert(error.reason, 'danger');
       } else {
@@ -70,23 +70,23 @@ class ContactForm extends Component {
       <div id="contact-form">
         <form>
           <div className="form-group">
-            <input ref="name" type="text" required="required" />
+            <input ref="name" type="text" required />
             <label className="control-label" htmlFor="input">Name</label><i className="bar"></i>
           </div>
           <div className="form-group">
-            <input ref="email" type="text" required="required" />
+            <input ref="email" type="text" required />
             <label className="control-label" htmlFor="input">Email</label><i className="bar"></i>
           </div>
           <div className="form-group">
-            <input ref="subject" type="text" required="required" />
+            <input ref="subject" type="text" required />
             <label className="control-label" htmlFor="input">Subject</label><i className="bar"></i>
           </div>
           <div className="form-group">
-            <textarea ref="message" required="required"></textarea>
+            <textarea ref="message" required></textarea>
             <label className="control-label" htmlFor="textarea">Message</label><i className="bar"></i>
           </div>
           <div className="form-group">
-            <button onClick={this.handleSubmit}>Submit</button>
+            <button onClick={this.handleSubmit}><span>Submit</span></button>
           </div>
         </form>
       </div>

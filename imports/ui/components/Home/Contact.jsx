@@ -4,9 +4,8 @@ import ContactForm from '../ContactForm';
 export const Contact = () => {
   return (
     <div className="contact">
-      <div className="page-content-wrapper">
-        <ContactForm />
-      </div>
+      <h1 className="contact-title">Let's Chat!</h1>
+      <ContactForm />
     </div>
   );
 }
