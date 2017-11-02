@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../components/Home/Header';
+import Nav from '../components/Nav';
 import About from '../components/Home/About';
 import Cases from '../components/Home/Cases';
 import { Contact } from '../components/Home/Contact';
@@ -35,6 +36,7 @@ class Home extends Component {
       <div id="home-page">
         <Header />
         <div className="load-wrapper">
+          <Nav />
           <About />
           <Cases />
           <Contact />
