@@ -15,8 +15,13 @@ class Nav extends Component {
   }
 
   componentDidMount() {
-    $('#nav-icon').click(function () {
+    $('#nav-icon').hover(function () {
       $(this).toggleClass('animate');
+    });
+
+    $('#nav-toggle').click(function () {
+      $('.nav-list').toggleClass('open');
+      $('#nav-icon').toggleClass('rotate');
     });
   }
 
@@ -24,18 +29,20 @@ class Nav extends Component {
     return (
       <nav id="navigation">
         <div className="wrapper">
-          <a className="logo" href="#">Logo</a>
-          <ul>
+          {/* <a className="logo" href="#">Logo</a> */}
+          <ul className="nav-list">
             <li><a href="/">About</a></li>
             <li><a href="">Cases</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="">Resume</a></li>
           </ul>
-          <div id="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <button id="nav-toggle">
+            <div id="nav-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
         </div>
       </nav>
     );
