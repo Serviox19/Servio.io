@@ -34,9 +34,9 @@ class Home extends Component {
   render() {
     return (
       <div id="home-page">
+        <Nav />
         <Header />
         <div className="load-wrapper">
-          <Nav />
           <About />
           <Cases />
           <Contact />

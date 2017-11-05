@@ -47,7 +47,7 @@ class Resume extends Component {
               <div className="image"></div>
               <span className="name"><h2>Servio Mora</h2></span>
             </div>
-            <div className="block about">
+            <div className="block resume-about">
               <h2 className="title">Full Stack Web Developer</h2> <br />
               <h2 style={{ alignSelf: 'flex-start' }}>About Me</h2>
               <p style={{ marginBottom: '2em' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>

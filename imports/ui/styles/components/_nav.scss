@@ -1,19 +1,17 @@
 #navigation {
   width: 100%;
-  height: 100px;
+  height: inherit;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: fixed;
+  position: fixed !important;
   top: 0;
-  right: 0;
-  left: 0;
-  z-index: 999;
+  z-index: $nav-Zindex !important;
 
   .wrapper {
     width: 100%;
+    height: 100px;
     margin: 0 7%;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 
@@ -24,13 +22,17 @@
     }
 
     .nav-list {
-      background: #eee;
+      display: none;
+      position: absolute;
+      right: 8em;
+      width: 0;
       height: 35px;
       line-height: 35px;
       border-radius: 11px;
-      width: 0;
-      display: none;
-
+      z-index: $nav-list-Zindex;
+      background: #eee;
+      transition: width 1s ease-in-out;
+      transform-origin: right;
 
       li {
         display: inline;
@@ -39,6 +41,7 @@
         a {
           text-decoration: none;
           color: #000;
+          cursor: pointer;
         }
       }
     }
@@ -46,25 +49,18 @@
     .nav-list.open {
       display: inline-block;
       width: 375px;
-      transition: width .8s ease-in-out;
-      transform-origin: right
     }
 
     #nav-toggle {
-      visibility: visible;
-      position: fixed;
-      z-index: 999;
-      top: 20px;
-      right: 50px;
       width: 60px;
       height: 60px;
-      transition: all .45s;
       border-radius: 50%;
       border: none !important;
       opacity: 1;
       background-color: #fff;
       box-shadow: 0 8px 20px 2px rgba(0,0,0,.25);
       outline: none !important;
+      z-index: $nav-toggle-Zindex;
 
       #nav-icon {
         margin: 0 auto;

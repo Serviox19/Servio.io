@@ -1,10 +1,12 @@
 .helicopter_wrapper {
+  visibility: hidden;
   position: absolute;
   top: 2em;
   left: -8% !important;
   animation: glide 14s linear infinite;
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
+  z-index: $helicopter-Zindex;
 
 
   .balloon {
