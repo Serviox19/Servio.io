@@ -9,7 +9,10 @@ class Header extends Component {
       $('.loader').css({ display: 'none' });
       $('.load-wrapper').css({ display: 'flex' });
       $('.header-items > h2').css({ animationPlayState: 'running' });
-      $('.helicopter_wrapper').css({ animationPlayState: 'running', visibility: 'visible' });
+      $('.helicopter_wrapper').css({
+        animationPlayState: 'running',
+        visibility: 'visible'
+      });
     }
     setTimeout(spinner, 3000);
     setTimeout(() => {

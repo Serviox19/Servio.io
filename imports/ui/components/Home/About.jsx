@@ -28,8 +28,13 @@ class About extends Component {
       <div className="about">
         <div className="banner"></div>
         <div className="info">
-          <h2>About Section</h2> <br />
-          <h2>Servio Mora</h2>
+          <h1>Bonjour</h1>
+          <h2>My Name is Servio Mora</h2>
+          <h2>I'm A Full Stack Web Developer</h2>
+          <div className="bio">
+            <p>I have always been interested in technology. I started out working Help Desk since I was in High School. Over time I realized I needed to do something more impactful, which led me to coding. Now I am a Web Developer with experience and impressive projects to show for. I enjoy the daily struggles of having to learn new things constantly, and I love building stunning user experiences!</p>
+            <p>I have always been the type of guy that has to over-deliver. Being average and just getting by has never been my style. When I develop anything I expect people to say `Woah that looks awesome`.</p>
+          </div>
         </div>
       </div>
     );

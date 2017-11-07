@@ -16,7 +16,8 @@
   .banner {
     height: 100%;
     width: 0;
-    background: #eee;
+    background: url('/images/bay.gif') center center no-repeat;
+    background-size: cover;
   }
 
   .info {
@@ -29,9 +30,20 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 2em;
+    color: #F5F5F5;
+    font-family: 'Open Sans', sans-serif;
 
-    h2 {
-      text-align: center;
+    h1, h2 {
+      font-weight: 400 !important;
+    }
+
+    .bio {
+      margin: 1em 10%;
+
+      p {
+        line-height: 1.8;
+        text-align: justify;
+      }
     }
   }
 }

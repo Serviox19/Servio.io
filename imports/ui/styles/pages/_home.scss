@@ -1,3 +1,12 @@
+#home-page {
+  height: 100vh;
+  overflow: auto;
+
+  .load-wrapper {
+    display: none;
+    flex-direction: column;
+  }
+}
 
 #scrollTop {
   width: 50px;
