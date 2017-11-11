@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
+import Scrollbar from 'smooth-scrollbar';
 
 class Cases extends Component {
 
   componentDidMount() {
+    var scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
+      'speed':'3',
+      'overscrollEffect':'bounce',
+      'damping':'.05'
+    });
 
+    scrollbar.addListener(function () {
+      
+    });
   }
 
   render() {
