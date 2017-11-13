@@ -4,256 +4,332 @@ $highlight: #37FDFC;
 
 /* ######### */
 
+#resume-page {
+  height: 100vh;
 
-.intro-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin-top: 75px;
-  font-family: 'Open Sans', sans-serif;
 
-  .block {
-    width: 30%;
-    margin: 0 auto;
-    padding: 0 1em;
-    position: relative;
+
+  .intro-wrapper {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    padding-top: 75px;
+    font-family: 'Open Sans', sans-serif;
 
-    .image {
-      height: 400px;
-      background: #eee;
-      width: 90%;
+    .block {
+      width: 30%;
       margin: 0 auto;
+      padding: 0 1em;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .image {
+        height: 400px;
+        background: #eee;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .name {
+        display: inline-block;
+        position: absolute;
+        top: 1em;
+        left: 75%;
+        width: fit-content;
+        font-size: 20px;
+
+        h2 {
+          font-weight: 600;
+        }
+      }
     }
 
-    .name {
-      display: inline-block;
-      position: absolute;
-      top: 1em;
-      left: 75%;
-      width: fit-content;
-      font-size: 20px;
+    .resume-about {
+      margin-top: 4.5em;
+
+      .title {
+        background-color: $highlight;
+        text-align: center;
+        margin-bottom: 1em;
+        font-weight: 600;
+        padding: 5px;
+      }
+
+      h2 {
+        margin-bottom: 0.5em;
+        font-weight: 600;
+      }
+
+      p {
+        line-height: 1.6em;
+        text-align: justify;
+      }
+    }
+
+    .info {
+      padding-top: 2em;
+      justify-content: space-around;
+      align-items: center;
+      max-height: 350px;
 
       h2 {
         font-weight: 600;
       }
+
+      p {
+        line-height: 2em;
+        text-align: center;
+      }
     }
   }
 
-  .resume-about {
-    margin-top: 4.5em;
-
-    .title {
-      background-color: $highlight;
-      text-align: center;
-      margin-bottom: 1em;
-      font-weight: 600;
-      padding: 5px;
-    }
-
-    h2 {
-      margin-bottom: 0.5em;
-      font-weight: 600;
-    }
-
-    p {
-      line-height: 1.6em;
-      text-align: justify;
-    }
-  }
-
-  .info {
-    padding-top: 2em;
+  .exp-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    max-height: 350px;
+    margin-top: 100px;
+    font-family: 'Open Sans', sans-serif;
 
-    h2 {
-      font-weight: 600;
-    }
-
-    p {
-      line-height: 2em;
-      text-align: center;
-    }
-  }
-}
-
-.exp-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 100px;
-  font-family: 'Open Sans', sans-serif;
-
-  .education {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-
-    .block {
-      line-height: 1.7rem;
-      margin-bottom: 50px;
-
-      .location {
-        color: #636466;
-      }
-    }
-
-    h1 {
-      text-align: center;
-      position: relative;
-      font-weight: 600;
-      margin-bottom: 1.5em;
-
-      &::after {
-        content: "";
-        height: 2px;
-        width: 100%;
-        background: #231F20;
-        position: absolute;
-        bottom: -1.5rem;
-        left: 0;
-      }
-    }
-  }
-
-  .work {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-
-    h1 {
-      position: relative;
-      width: 100%;
-      font-weight: 600;
-      margin-bottom: 1.5em;
-
-      &::after {
-        content: "";
-        height: 2px;
-        width: 100%;
-        background: #231F20;
-        position: absolute;
-        bottom: -1.5rem;
-        right: 0;
-      }
-    }
-
-    .wrapper {
+    .education {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: column;
+      width: 30%;
 
       .block {
-        width: 50%;
-        margin-bottom: 50px;
         line-height: 1.7rem;
+        margin-bottom: 50px;
 
         .location {
           color: #636466;
         }
       }
-    }
-  }
-}
 
-.skills-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 75px;
-  font-family: 'Open Sans', sans-serif;
+      h1 {
+        text-align: center;
+        position: relative;
+        font-weight: 600;
+        margin-bottom: 1.5em;
 
-  .personal {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-
-    .highlight {
-      background-color: $highlight;
-      padding: 3px;
-    }
-
-    h1 {
-      text-align: center;
-      position: relative;
-      width: 100%;
-      font-weight: 600;
-      margin-bottom: 1.5em;
-
-      &::after {
-        content: "";
-        height: 2px;
-        width: 100%;
-        background: #231F20;
-        position: absolute;
-        bottom: -1.5rem;
-        right: 0;
+        &::after {
+          content: "";
+          height: 2px;
+          width: 100%;
+          background: #231F20;
+          position: absolute;
+          bottom: -1.5rem;
+          left: 0;
+        }
       }
     }
 
-    h3 {
-      margin: 1.2em 0;
-    }
+    .work {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
 
-    .wrapper {
-
-      .skill {
-        width: 100%;
-        margin: 1.4em 0;
+      h1 {
         position: relative;
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 1.5em;
 
-        h2 {
-          margin-bottom: 10px;
+        &::after {
+          content: "";
+          height: 2px;
+          width: 100%;
+          background: #231F20;
+          position: absolute;
+          bottom: -1.5rem;
+          right: 0;
         }
+      }
 
-        .skill-name {
-          position: relative;
-          display: block;
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-          &::after {
-            content: "";
-            background: #231F20;
-            width: 100%;
-            height: 1px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
+        .block {
+          width: 50%;
+          margin-bottom: 50px;
+          line-height: 1.7rem;
+
+          .location {
+            color: #636466;
           }
         }
+      }
+    }
+  }
 
-        .skill-track {
+  .skills-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 75px;
+    font-family: 'Open Sans', sans-serif;
+
+    .personal {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+
+      .highlight {
+        background-color: $highlight;
+        padding: 3px;
+      }
+
+      h1 {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 1.5em;
+
+        &::after {
+          content: "";
+          height: 2px;
+          width: 100%;
+          background: #231F20;
           position: absolute;
-          background-color: $highlight;
-          padding: 3px;
-          left: 0;
+          bottom: -1.5rem;
           right: 0;
-          bottom: 1px;
-          height: .9em;
-          z-index: -1;
-          transform-origin: left center;
-          animation: stat 1s forwards;
+        }
+      }
+
+      h3 {
+        margin: 1.2em 0;
+      }
+
+      .wrapper {
+
+        .skill {
+          width: 100%;
+          margin: 1.4em 0;
+          position: relative;
+
+          h2 {
+            margin-bottom: 10px;
+          }
+
+          .skill-name {
+            position: relative;
+            display: block;
+
+            &::after {
+              content: "";
+              background: #231F20;
+              width: 100%;
+              height: 1px;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+            }
+          }
+
+          .skill-track {
+            position: absolute;
+            background-color: $highlight;
+            padding: 3px;
+            left: 0;
+            right: 0;
+            bottom: 1px;
+            height: .9em;
+            z-index: -1;
+            transform-origin: left center;
+            animation: stat 1s forwards;
+          }
+        }
+      }
+    }
+
+    .professional {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      h1 {
+        position: relative;
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 1.5em;
+
+        &::after {
+          content: "";
+          height: 2px;
+          width: 100%;
+          background: #231F20;
+          position: absolute;
+          bottom: -1.5rem;
+          right: 0;
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .skill {
+          width: 45%;
+          margin: 1.2em 0;
+          position: relative;
+
+          h2 {
+            margin-bottom: 10px;
+          }
+
+          .skill-name {
+            position: relative;
+            display: block;
+
+            &::after {
+              content: "";
+              background: #231F20;
+              width: 100%;
+              height: 1px;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+            }
+          }
+
+          .skill-track {
+            position: absolute;
+            background-color: $highlight;
+            padding: 2px;
+            left: 0;
+            right: 0;
+            bottom: 1px;
+            height: .9em;
+            z-index: -1;
+            transform-origin: left center;
+            animation: stat 1s forwards;
+          }
         }
       }
     }
   }
 
-  .professional {
+  .references {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2em 0 7em 0;
+    font-family: 'Open Sans', sans-serif;
 
     h1 {
       position: relative;
-      width: 100%;
       font-weight: 600;
-      margin-bottom: 1.5em;
+      margin-bottom: 1em;
+      text-align: center;
 
       &::after {
         content: "";
@@ -268,99 +344,28 @@ $highlight: #37FDFC;
 
     .wrapper {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: column;
 
-      .skill {
-        width: 45%;
-        margin: 1.2em 0;
-        position: relative;
+      .block {
+        margin: 1em 0;
 
-        h2 {
-          margin-bottom: 10px;
+        h3 {
+          margin-bottom: 0.5em;
         }
 
-        .skill-name {
-          position: relative;
-          display: block;
-
-          &::after {
-            content: "";
-            background: #231F20;
-            width: 100%;
-            height: 1px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-          }
-        }
-
-        .skill-track {
-          position: absolute;
-          background-color: $highlight;
-          padding: 2px;
-          left: 0;
-          right: 0;
-          bottom: 1px;
-          height: .9em;
-          z-index: -1;
-          transform-origin: left center;
-          animation: stat 1s forwards;
+        h5 {
+          margin-bottom: 0.5em;
         }
       }
     }
   }
-}
 
-.references {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 2em 0;
-  font-family: 'Open Sans', sans-serif;
-
-  h1 {
-    position: relative;
-    font-weight: 600;
-    margin-bottom: 1em;
-    text-align: center;
-
-    &::after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      background: #231F20;
-      position: absolute;
-      bottom: -1.5rem;
-      right: 0;
+  @keyframes stat {
+    0% {
+      transform: translate3d(-100%, 0px, 0px);
     }
-  }
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-
-    .block {
-      margin: 1em 0;
-
-      h3 {
-        margin-bottom: 0.5em;
-      }
-
-      h5 {
-        margin-bottom: 0.5em;
-      }
+    100% {
+      transform: translate3d(0%, 0px, 0px);
     }
-  }
-}
-
-@keyframes stat {
-  0% {
-    transform: translate3d(-100%, 0px, 0px);
-  }
-  100% {
-    transform: translate3d(0%, 0px, 0px);
   }
 }

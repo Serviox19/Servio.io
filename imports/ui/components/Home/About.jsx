@@ -38,8 +38,8 @@ class About extends Component {
             <p>I have always been the type of guy that has to over-deliver. Being average and just getting by has never been my style. When I develop anything I expect people to say `Woah that looks awesome`.</p>
           </div>
           <div className="links">
-            <a href="https://github.com/Serviox19" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/servio-mora-b93972108/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://github.com/Serviox19" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/servio-mora-b93972108/" target="_blank"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
             <a className="resume-btn" href="/resume">Resume</a>
           </div>
         </div>

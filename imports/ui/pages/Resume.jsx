@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Nav from '../components/Nav';
 
 class Resume extends Component {
 
 
   componentDidMount() {
-
+    //jquery
   }
 
 
@@ -40,7 +41,7 @@ class Resume extends Component {
 
   render() {
     return (
-      <div>
+      <div id="resume-page">
         <div id="page-content-wrapper">
           <div className="intro-wrapper">
             <div className="block">

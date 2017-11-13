@@ -4,7 +4,7 @@ import Scrollbar from 'smooth-scrollbar';
 class Nav extends Component {
 
   scrollBar() {
-    var scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
+    var scrollbar = Scrollbar.init(document.querySelector('#home-page, #resume-page'), {
       'speed':'3',
       'overscrollEffect':'bounce',
       'damping':'.05'
