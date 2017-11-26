@@ -19,7 +19,7 @@ class Cases extends Component {
     return (
       <div className="cases">
         <div className="wrapper">
-          <a href="https://madd-coffee.myshopify.com/?key=5ca535b66ff9b715732feb1066d06c8c1d3ecd645f24202b61bd46b51bd7d95c" target="_blank" className="case" style={{ backgroundImage: `url('/images/cases/madd.jpg')` }}>
+          <a href="https://maddcoffee.com" target="_blank" className="case" style={{ backgroundImage: `url('/images/cases/madd.jpg')` }}>
             <span className="overlay">
               <div className="bg_img" style={{ backgroundColor: '#8E2051' }}></div>
             </span>
