@@ -34,7 +34,7 @@ class Header extends Component {
   }
 
   handleArrowClick() {
-    var scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
+    const scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
       'speed': '3',
       'overscrollEffect':'bounce',
       'damping':'.05'

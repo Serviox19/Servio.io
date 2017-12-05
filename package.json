@@ -17,6 +17,12 @@
     "smooth-scrollbar": "^7.4.1"
   },
   "devDependencies": {
-    "@meteorjs/eslint-config-meteor": "^1.0.5"
+    "@meteorjs/eslint-config-meteor": "^1.0.5",
+    "autoprefixer": "^7.2.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {"browsers": ["last 2 versions"]}
+    }
   }
 }
