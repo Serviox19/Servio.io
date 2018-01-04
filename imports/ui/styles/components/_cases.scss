@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 80vh;
+    height: 75vh;
 
     .left {
       width: 45%;
@@ -28,9 +28,28 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        cursor: pointer;
+        cursor: pointer !important;
         background: no-repeat 50% 50%;
         background-size: cover !important;
+
+        &:hover {
+          .overlay {
+            opacity: 1;
+            transition: opacity .3s;
+          }
+        }
+
+        .overlay {
+          cursor: pointer !important;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          opacity: 0;
+          text-decoration: none;
+          z-index: 1;
+        }
       }
     }
 
@@ -50,9 +69,28 @@
           align-items: center;
           justify-content: center;
           position: relative;
-          cursor: pointer;
+          cursor: pointer !important;
           background: no-repeat 50% 50%;
           background-size: cover !important;
+
+          &:hover {
+            .overlay {
+              opacity: 1;
+              transition: opacity .3s;
+            }
+          }
+
+          .overlay {
+            cursor: pointer !important;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            text-decoration: none;
+            z-index: 1;
+          }
         }
       }
 
@@ -73,9 +111,28 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            cursor: pointer;
+            cursor: pointer !important;
             background: no-repeat 50% 50%;
             background-size: cover !important;
+
+            &:hover {
+              .overlay {
+                opacity: 1;
+                transition: opacity .3s;
+              }
+            }
+
+            .overlay {
+              cursor: pointer !important;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              opacity: 0;
+              text-decoration: none;
+              z-index: 1;
+            }
           }
         }
 
@@ -90,9 +147,28 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            cursor: pointer;
+            cursor: pointer !important;
             background: no-repeat 50% 50%;
             background-size: cover !important;
+
+            &:hover {
+              .overlay {
+                opacity: 1;
+                transition: opacity .3s;
+              }
+            }
+
+            .overlay {
+              cursor: pointer !important;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              opacity: 0;
+              text-decoration: none;
+              z-index: 1;
+            }
           }
         }
       }
@@ -103,7 +179,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 20vh;
+    height: 25vh;
 
     .case {
       width: 100%;
@@ -113,9 +189,28 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      cursor: pointer;
+      cursor: pointer !important;
       background: no-repeat 50% 50%;
       background-size: cover !important;
+
+      &:hover {
+        .overlay {
+          opacity: 1;
+          transition: opacity .3s;
+        }
+      }
+
+      .overlay {
+        cursor: pointer !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        text-decoration: none;
+        z-index: 1;
+      }
     }
   }
 }
