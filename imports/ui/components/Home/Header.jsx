@@ -58,7 +58,7 @@ class Header extends Component {
         </div>
         <Helicopter />
         <div className="header-items">
-          <h2>Servio Mora <br /> Full Stack Web Developer</h2>
+          <h2>Servio Mora <br /> Web Developer</h2>
         </div>
         <span className="arrow-link" onClick={this.handleArrowClick.bind(this)}>
           <a><i className="material-icons" style={{fontSize:48}}>arrow_downward</i></a>

@@ -20,48 +20,68 @@ class Cases extends Component {
       <div className="cases">
         <div id="row2">
           <div className="left">
-            <a href="https://maddcoffee.com" target="_blank" className="case" style={{ backgroundImage: `url('/images/cases/madd.jpg')` }}>
+            <a href="https://maddcoffee.com" target="_blank" className="case">
               <span className="overlay" style={{ backgroundColor: '#8E2051' }}>
-                <div className="bg_img"></div>
-                <div className="logo"></div>
+                <span className="logo">
+                  <img src="/images/logos/madd-logo.png" />
+                </span>
               </span>
+              <div className="bg_img">
+                <img src="/images/cases/madd.jpg" />
+              </div>
             </a>
           </div>
           <div className="right">
             <div id="big-left">
-              <a href="http://cami.com" target="_blank" className="case" style={{ backgroundImage: `url('/images/cases/cami.jpg')` }}>
+              <a href="http://cami.com" target="_blank" className="case">
                 <span className="overlay" style={{ backgroundColor: '#EF4639' }}>
-                  <div className="bg_img"></div>
-                  <div className="logo"></div>
+                  <span className="logo">
+                    <img src="/images/logos/cami_logo-black.png" />
+                  </span>
                 </span>
+                <div className="bg_img">
+                  <img src="/images/cases/cami.jpg" />
+                </div>
               </a>
             </div>
             <div id="stacked">
               <div id="top">
-                <a href="https://shophauterebel.com/" target="_blank" className="case" style={{ backgroundImage: `url('/images/cases/haute.jpg')` }}>
+                <a href="https://shophauterebel.com/" target="_blank" className="case">
                   <span className="overlay" style={{ backgroundColor: '#F6DC64' }}>
-                    <div className="bg_img"></div>
-                    <div className="logo"></div>
+                    <span className="logo">
+                      <img src="/images/logos/haute-logo.png" />
+                    </span>
                   </span>
+                  <div className="bg_img">
+                    <img src="/images/cases/haute.jpg" />
+                  </div>
                 </a>
               </div>
               <div id="bottom">
-                <a href="https://amcreditrepair.com/" target="_blank" className="case" style={{ backgroundImage: `url('/images/cases/am-credit.jpeg')` }}>
+                <a href="https://amcreditrepair.com/" target="_blank" className="case">
                   <span className="overlay" style={{ backgroundColor: '#7CCCD2' }}>
-                    <div className="bg_img"></div>
-                    <div className="logo"></div>
+                    <span className="logo">
+                      <img src="/images/logos/cropped-amcredit.png" />
+                    </span>
                   </span>
+                  <div className="bg_img">
+                    <img src="/images/cases/am-credit.jpeg" />
+                  </div>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div id="row1">
-          <a href="https://ockupy.com" target="_blank" className="case" style={{ backgroundImage: `url('/images/cases/ockupy.jpeg')` }}>
+          <a href="https://ockupy.com" target="_blank" className="case">
             <span className="overlay" style={{ backgroundColor: '#FFFFFF' }}>
-              <div className="bg_img"></div>
-              <div className="logo"></div>
+              <span className="logo">
+                <img src="/images/logos/ockupy-logo.png" />
+              </span>
             </span>
+            <div className="bg_img">
+              <img src="/images/cases/ockupy.jpeg" />
+            </div>
           </a>
         </div>
       </div>
