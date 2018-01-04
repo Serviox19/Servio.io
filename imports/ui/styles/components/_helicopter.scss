@@ -4,7 +4,6 @@
   top: 2em;
   left: -8% !important;
   animation: glide 14s linear infinite;
-  -moz-animation: glide 14s linear infinite;
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
   z-index: $helicopter-Zindex;
@@ -133,6 +132,14 @@
 
   to {
      transform:translateY(-8px) rotate3d(0,0,1,-2deg);
+  }
+}
+@keyframes glide {
+  0% {
+    left: -5%;
+  }
+  100% {
+    left: 105%;
   }
 }
 @-webkit-keyframes glide {
