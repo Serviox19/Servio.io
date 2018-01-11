@@ -13,12 +13,7 @@ class About extends Component {
     });
 
     scrollbar.addListener(function () {
-      if (scrollbar.offset.y > 500) {
-        $('.banner').css({
-          width: '50%',
-          transition: 'all 0.8s ease-in'
-        });
-      }
+      
     });
   }
 

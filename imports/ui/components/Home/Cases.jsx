@@ -11,7 +11,13 @@ class Cases extends Component {
     });
 
     scrollbar.addListener(function () {
-
+      if (scrollbar.offset.y > 1500) {
+        $('#row2 > .left').addClass('scaled');
+        $('#big-left').addClass('scaled');
+        $('#top').addClass('scaled');
+        $('#bottom').addClass('scaled');
+        $('#row1').addClass('scaled');
+      }
     });
   }
 

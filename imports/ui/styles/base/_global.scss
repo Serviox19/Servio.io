@@ -10,3 +10,26 @@ body {
   background-color: #F5F5F5;
   font-family: 'Open Sans', sans-serif !important;
 }
+
+.scaled {
+  -webkit-animation: poppin .8s ease-in forwards;
+  animation: poppin .8s ease-in forwards;
+}
+
+@-webkit-keyframes poppin {
+  from {
+    -webkit-transform: rotate(0deg) scale(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes poppin {
+  from {
+    transform: rotate(0deg) scale(0);
+  }
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+}
