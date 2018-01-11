@@ -8,7 +8,6 @@
   animation-play-state: paused;
   z-index: $helicopter-Zindex;
 
-
   .balloon {
     height: 40px;
     line-height: 40px;
@@ -103,6 +102,18 @@
     }
   }
 } /* End Helicopter Wrapper */
+
+
+/* ### Media Queries ### */
+
+@media screen and (max-width: 1000px) {
+  .helicopter_wrapper {
+    display: none !important;
+  }
+}
+
+
+/* ### ### */
 
 
 @keyframes spin {

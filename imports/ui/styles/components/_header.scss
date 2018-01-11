@@ -92,12 +92,6 @@
       animation-play-state: paused;
       -webkit-animation-play-state: paused;
     }
-
-    @media screen and (max-width: 500px) {
-      h2 {
-        letter-spacing: normal !important;
-      }
-    }
   }
 
   .animate {
