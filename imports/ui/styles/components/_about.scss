@@ -20,10 +20,11 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 2em 0;
 
     h1 {
       color: #F5F5F5;
-      font-size: 32px;
+      font-size: 36px;
       font-weight: 700;
     }
   }
@@ -75,7 +76,7 @@
       	border: none;
       	background: none;
       	color: #286aab;
-      	font-size: 1.4em;
+      	font-size: 18px;
       	overflow: visible;
       	-webkit-transition: color 0.7s;
       	transition: color 0.7s;
@@ -110,8 +111,7 @@
       .resume-btn {
         width: 120px;
         height: 40px;
-        border: solid 1px #000;
-        border-radius: 2.5px;
+        border: solid 1.2px #000;
         background-color: #F5F5F5;
         color: #000;
         text-align: center;
@@ -120,9 +120,9 @@
 
         &:hover {
           background-color: #000;
-          border: solid 1px #F5F5F5;
+          border: solid 1.2px #F5F5F5;
           color: #F5F5F5;
-          transition: all .3s ease-in-out;
+          transition: all .4s ease-in-out forwards;
         }
       }
     }

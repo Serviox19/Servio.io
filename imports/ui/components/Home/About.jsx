@@ -12,9 +12,7 @@ class About extends Component {
       'damping':'.05'
     });
 
-    scrollbar.addListener(function () {
-
-    });
+    
   }
 
 
