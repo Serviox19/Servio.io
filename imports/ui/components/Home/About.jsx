@@ -13,7 +13,7 @@ class About extends Component {
     });
 
     scrollbar.addListener(function () {
-      
+
     });
   }
 
@@ -21,7 +21,11 @@ class About extends Component {
   render() {
     return (
       <div className="about">
-        <div className="banner"></div>
+        <div className="banner">
+          <h1>Rockstar Dev!</h1>
+          <h1>Javascript Guy</h1>
+          <h1>Tech Junkie</h1>
+        </div>
         <div className="info">
           <div className="intro">
             <h1>Bonjour</h1>
