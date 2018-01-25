@@ -15,10 +15,10 @@ class Header extends Component {
         visibility: 'visible'
       });
     }
-    setTimeout(spinner, 3000); //spinny timer 3000
+    setTimeout(spinner, 30); //spinny timer 3000
     setTimeout(() => {
       $('.header-items').addClass('animate');
-    }, 7200);
+    }, 5800);
 
     $('.helicopter_wrapper').mouseover(function () {
       $(this).css({ animationPlayState: 'paused' });

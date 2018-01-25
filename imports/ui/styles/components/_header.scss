@@ -87,8 +87,8 @@
       text-transform: uppercase;
       line-height: 2.5em;
       text-align: center;
-      animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
-      -webkit-animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+      animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+      -webkit-animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
       animation-play-state: paused;
       -webkit-animation-play-state: paused;
     }

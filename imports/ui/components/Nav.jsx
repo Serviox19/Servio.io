@@ -54,10 +54,11 @@ class Nav extends Component {
         <div className="wrapper">
           {/* <a className="logo" href="#">Logo</a> */}
           <ul className="nav-list">
-            <li><a id="about-link">About</a></li>
-            <li><a id="cases-link">Cases</a></li>
-            <li><a id="contact-link">Contact</a></li>
-            <li><a href="/resume">Resume</a></li>
+            <li className="one"><a id="about-link">About</a></li>
+            <li className="two"><a id="cases-link">Cases</a></li>
+            <li className="three"><a id="contact-link">Contact</a></li>
+            <li className="four"><a href="/resume">Resume</a></li>
+            <hr />
           </ul>
           <button id="nav-toggle">
             <div id="nav-icon">

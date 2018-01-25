@@ -11,7 +11,7 @@
   .wrapper {
     width: 100%;
     height: 100px;
-    margin: 0 7%;
+    margin: 0 10%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -26,16 +26,20 @@
     .nav-list {
       display: none;
       right: 8em;
-      height: 35px;
-      line-height: 35px;
+      height: 42px;
+      line-height: 42px;
+      padding: 0 1%;
       border-radius: 11px;
       background: #eee;
-      transition: width 1s ease-in-out;
-      transform-origin: right;
 
       li {
-        display: inline;
-        padding: 0 15px;
+        display: inline-flex;
+        justify-content: center;
+        width: 24%;
+        margin: 0;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
 
         a {
           text-decoration: none;
@@ -43,16 +47,52 @@
           cursor: pointer;
         }
       }
+
+      .two {
+        &:hover {
+          ~ hr {
+            margin-left: 23.5%;
+          }
+        }
+      }
+
+      .three {
+        &:hover {
+          ~ hr {
+            margin-left: 47.8%;
+          }
+        }
+      }
+
+      .four {
+        &:hover {
+          ~ hr {
+            margin-left: 73%;
+          }
+        }
+      }
+
+      hr {
+        height: .25rem;
+        width: 23%;
+        margin: 0;
+        background: #000;
+        border: none;
+        transition: .3s ease-in-out;
+        transform: translateY(-4px) translateX(1px);
+      }
     }
 
     .nav-list.open {
       display: inline-block;
       width: 375px;
+      transition: width 1s ease;
+      transform-origin: right;
     }
 
     #nav-toggle {
       position: absolute;
-      right: 6em;
+      right: 8em;
       width: 60px;
       height: 60px;
       border-radius: 50%;
