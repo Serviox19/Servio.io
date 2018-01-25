@@ -11,18 +11,18 @@ class Resume extends Component {
 
   skills() {
     return [
-      {"_id": "1", "name": "HTML", "percentage": "95"},
-      {"_id": "2", "name": "CSS & Sass", "percentage": "90"},
-      {"_id": "3", "name": "Javascript & jQuery", "percentage": "78"},
-      {"_id": "4", "name": "Angular", "percentage": "70"},
-      {"_id": "5", "name": "Node", "percentage": "70"},
-      {"_id": "6", "name": "React", "percentage": "80"},
-      {"_id": "7", "name": "React Native", "percentage": "70"},
-      {"_id": "8", "name": "Photoshop", "percentage": "35"},
-      {"_id": "9", "name": "JSON", "percentage": "90"},
-      {"_id": "10", "name": "PHP", "percentage": "55"},
-      {"_id": "11", "name": "Git", "percentage": "85"},
-      {"_id": "12", "name": "Wordpress", "percentage": "60"}
+      {_id: 1, name: "HTML", percentage: "95"},
+      {_id: 2, name: "CSS & Sass", percentage: "90"},
+      {_id: 3, name: "Javascript & jQuery", percentage: "78"},
+      {_id: 4, name: "Angular", percentage: "70"},
+      {_id: 5, name: "Node", percentage: "70"},
+      {_id: 6, name: "React", percentage: "80"},
+      {_id: 7, name: "React Native", percentage: "70"},
+      {_id: 8, name: "Photoshop", percentage: "35"},
+      {_id: 9, name: "JSON", percentage: "90"},
+      {_id: 10, name: "PHP", percentage: "55"},
+      {_id: 11, name: "Git", percentage: "85"},
+      {_id: 12, name: "Wordpress", percentage: "60"}
     ]
   }
 
@@ -43,6 +43,9 @@ class Resume extends Component {
     return (
       <div id="resume-page">
         <div id="page-content-wrapper">
+          <div id="link-wrapper">
+            <a id="home-link" href="/">Home</a>
+          </div>
           <div className="intro-wrapper">
             <div className="block">
               <div className="image"></div>
@@ -51,8 +54,8 @@ class Resume extends Component {
             <div className="block resume-about">
               <h2 className="title">Full Stack Web Developer</h2> <br />
               <h2 style={{ alignSelf: 'flex-start' }}>About Me</h2>
-              <p style={{ marginBottom: '2em' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+              <p style={{ marginBottom: '1em' }}>My name is Servio Mora, a tech enthusiast turned developer looking to make an impact on the world through innovative software and unique user experiences.</p>
+              <p>Constant self improvement and dedication to continuous education is how I keep progressing, and I'm not close to being finished.</p>
             </div>
             <div className="block info">
               <h2>Address</h2>
@@ -81,7 +84,7 @@ class Resume extends Component {
               <div className="wrapper">
                 <div className="block">
                   <h3>Full Stack Web Developer</h3>
-                  <h5>Ockupy Inc,&nbsp;&nbsp;May 2017 - Present</h5>
+                  <h5>Ockupy Inc,&nbsp;&nbsp;May 2017 - December 2017</h5>
                   <p className="location">Edgewater NJ</p>
                 </div>
                 <div className="block">
@@ -105,7 +108,7 @@ class Resume extends Component {
           <div className="skills-wrapper">
             <div className="personal">
               <h1>Personal Skills</h1>
-              <h3><span className="highlight">Languages</span></h3>
+              <h3><span>Languages</span></h3>
               <div className="wrapper">
                 <div className="skill">
                   <span><h2>98</h2></span>
@@ -118,7 +121,7 @@ class Resume extends Component {
                   <span className="skill-track" style={{ width: '90%' }}></span>
                 </div>
               </div>
-              <h3><span className="highlight">Work Skills</span></h3>
+              <h3><span>Work Skills</span></h3>
               <div className="wrapper">
                 <div className="skill">
                   <span><h2>80</h2></span>
