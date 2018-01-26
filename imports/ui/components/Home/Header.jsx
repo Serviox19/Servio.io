@@ -5,6 +5,19 @@ import Scrollbar from 'smooth-scrollbar';
 class Header extends Component {
 
   componentDidMount() {
+    var scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
+      'speed': '3',
+      'overscrollEffect':'bounce',
+      'damping':'.05'
+    });
+
+    $('.arrow-link').click(function (){
+      scrollbar.scrollIntoView(document.querySelector('.about'), {
+        alignToTop: true,
+        offsetTop: 0
+      });
+    });
+
     function spinner() {
       $('.loader').css({ display: 'none' });
       $('.load-wrapper').css({ display: 'flex' });
@@ -29,23 +42,9 @@ class Header extends Component {
     });
   }
 
-  componentWillUpdate() {
+  componentDidUpdate() {
     $('.loader').css({ display: 'none !important' });
   }
-
-  handleArrowClick() {
-    const scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
-      'speed': '3',
-      'overscrollEffect':'bounce',
-      'damping':'.05'
-    });
-
-    scrollbar.scrollIntoView(document.querySelector('.about'), {
-      alignToTop: true,
-      offsetTop: 0
-    });
-  }
-
 
   render() {
     return (
@@ -60,7 +59,7 @@ class Header extends Component {
         <div className="header-items">
           <h2>Servio Mora <br /> Web Developer</h2>
         </div>
-        <span className="arrow-link" onClick={this.handleArrowClick.bind(this)}>
+        <span className="arrow-link">
           <a><i className="material-icons" style={{fontSize:48}}>arrow_downward</i></a>
         </span>
       </div>

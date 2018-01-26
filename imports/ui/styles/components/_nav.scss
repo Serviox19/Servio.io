@@ -45,6 +45,11 @@
           text-decoration: none;
           color: #000;
           cursor: pointer;
+          width: 100%;
+
+          &:focus {
+            outline: none !important;
+          }
         }
       }
 

@@ -15,6 +15,14 @@ class Home extends Component {
       'damping':'.05'
     });
 
+    //fixes need fo double click to scroll
+    setTimeout(function () {
+      scrollbar.scrollIntoView(document.querySelector('.header'), {
+        alignToTop: true,
+        offsetTop: 0
+      });
+    }, 3100);
+
     scrollbar.addListener(function () {
       if (scrollbar.offset.y >= 2000 ) {
         $('#scrollTop').css({ display: 'flex' });
