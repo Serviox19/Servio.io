@@ -32,15 +32,15 @@ class Home extends Component {
       function animate() {
         $('#one').css({
           'opacity': '1',
-          'transition': 'all 0.7s ease-in'
+          'transition': 'opacity 0.8s ease-in'
         });
         $('#two').css({
           'opacity': '1',
-          'transition': 'all 0.7s ease-in'
+          'transition': 'opacity 0.8s ease-in'
         });
         $('#three').css({
           'opacity': '1',
-          'transition': 'all 0.7s ease-in'
+          'transition': 'opacity 0.8s ease-in'
         });
       }
 
@@ -69,7 +69,7 @@ class Home extends Component {
           <Cases />
           <Contact />
         </div>
-        <a id="scrollTop" onClick={() => {this.scrollTop.bind(this)}}><i className="material-icons" style={{fontSize:30}}>keyboard_arrow_up</i></a>
+        <a id="scrollTop" onClick={() => this.scrollTop() }><i className="material-icons" style={{fontSize:30}}>keyboard_arrow_up</i></a>
       </div>
     );
   }
