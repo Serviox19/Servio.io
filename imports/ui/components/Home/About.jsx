@@ -11,8 +11,6 @@ class About extends Component {
       'overscrollEffect':'bounce',
       'damping':'.05'
     });
-
-    
   }
 
 
@@ -20,9 +18,9 @@ class About extends Component {
     return (
       <div className="about">
         <div className="banner">
-          <h1>Rockstar Dev!</h1>
-          <h1>Javascript Guy</h1>
-          <h1>Tech Junkie</h1>
+          <h1 id="one">Rockstar Dev!</h1>
+          <h1 id="two">Javascript Guy</h1>
+          <h1 id="three">Tech Junkie</h1>
         </div>
         <div className="info">
           <div className="intro">

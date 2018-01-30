@@ -20,12 +20,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 2em 0;
 
     h1 {
       color: $blue-color;
       font-size: 45px;
       font-weight: 700;
+      opacity: 0;
     }
   }
 

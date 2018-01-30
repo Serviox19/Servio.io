@@ -24,8 +24,28 @@ class Home extends Component {
     }, 3100);
 
     scrollbar.addListener(function () {
-      if (scrollbar.offset.y >= 2000 ) {
-        $('#scrollTop').css({ display: 'flex' });
+      let one = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.banner > #one');
+      let two = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.banner > #two');
+      let three = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.banner > #three');
+      let scrollTarget = scrollbar.isVisible(two);
+
+      function animate() {
+        $('#one').css({
+          'opacity': '1',
+          'transition': 'all 0.7s ease-in'
+        });
+        $('#two').css({
+          'opacity': '1',
+          'transition': 'all 0.7s ease-in'
+        });
+        $('#three').css({
+          'opacity': '1',
+          'transition': 'all 0.7s ease-in'
+        });
+      }
+
+      if (scrollTarget) {
+        animate();
       }
     });
   }
@@ -49,7 +69,7 @@ class Home extends Component {
           <Cases />
           <Contact />
         </div>
-        <a id="scrollTop" onClick={this.scrollTop.bind(this)}><i className="material-icons" style={{fontSize:30}}>keyboard_arrow_up</i></a>
+        <a id="scrollTop" onClick={() => {this.scrollTop.bind(this)}}><i className="material-icons" style={{fontSize:30}}>keyboard_arrow_up</i></a>
       </div>
     );
   }
