@@ -3,11 +3,7 @@ import Nav from '../components/Nav';
 
 class Resume extends Component {
 
-
-  componentDidMount() {
-    //jquery
-  }
-
+  componentDidMount() {};
 
   skills() {
     return [

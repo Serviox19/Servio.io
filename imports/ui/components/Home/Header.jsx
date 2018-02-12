@@ -11,7 +11,7 @@ class Header extends Component {
       'damping':'.05'
     });
 
-    $('.arrow-link').click(function (){
+    $('.arrow-link').on('click', function () {
       scrollbar.scrollIntoView(document.querySelector('.about'), {
         alignToTop: true,
         offsetTop: 0

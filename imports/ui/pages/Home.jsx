@@ -9,6 +9,7 @@ import Scrollbar from 'smooth-scrollbar';
 class Home extends Component {
 
   componentDidMount() {
+
     var scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
       'speed': '3',
       'overscrollEffect':'bounce',
@@ -24,6 +25,7 @@ class Home extends Component {
     }, 3100);
 
     scrollbar.addListener(function () {
+
       let one = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.banner > #one');
       let two = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.banner > #two');
       let three = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.banner > #three');
@@ -61,15 +63,20 @@ class Home extends Component {
 
   render() {
     return (
-      <div id="home-page">
-        <Nav />
-        <Header />
-        <div className="load-wrapper">
-          <About />
-          <Cases />
-          <Contact />
+      <div>
+        <div id="home-page">
+          <Nav />
+          <Header />
+          <div className="load-wrapper">
+            <About />
+            <Cases />
+            <Contact />
+          </div>
+          <a id="scrollTop" onClick={() => this.scrollTop() }><i className="material-icons" style={{fontSize:30}}>keyboard_arrow_up</i></a>
         </div>
-        <a id="scrollTop" onClick={() => this.scrollTop() }><i className="material-icons" style={{fontSize:30}}>keyboard_arrow_up</i></a>
+        <div id="mobile-home">
+          <h1>Mobile Home</h1>
+        </div>
       </div>
     );
   }
