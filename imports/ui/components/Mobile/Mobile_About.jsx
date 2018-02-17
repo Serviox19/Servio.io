@@ -8,7 +8,7 @@ class MobileAbout extends Component {
 
   render() {
     return (
-      <div className="mobile_about">
+      <div id="mobile_about">
         <h1>Mobile About</h1>
       </div>
     );

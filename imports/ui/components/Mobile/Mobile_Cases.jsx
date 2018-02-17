@@ -35,7 +35,7 @@ class MobileCases extends Component {
 
   render() {
     return (
-      <div className="mobile_cases">
+      <div id="mobile_cases">
         <div className="cases">
           {this.renderCases()}
         </div>{/* End Cases Wrapper */}
