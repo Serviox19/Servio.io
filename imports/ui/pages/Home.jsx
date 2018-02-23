@@ -79,7 +79,6 @@ class Home extends Component {
           <a id="scrollTop" onClick={() => this.scrollTop() }><i className="material-icons" style={{fontSize:30}}>keyboard_arrow_up</i></a>
         </div>
         <div id="mobile-home">
-          <h1>Mobile Home</h1>
           <MobileNav />
           <MobileAbout />
           <MobileCases />

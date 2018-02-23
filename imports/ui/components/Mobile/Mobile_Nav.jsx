@@ -12,7 +12,16 @@ class MobileNav extends Component {
   render() {
     return (
       <nav id="mobile_nav">
-        <h1>Mobile Navigation</h1>
+        <div className="wrapper">
+          <h1>Servio.io</h1>
+          <button>
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
       </nav>
     );
   }
