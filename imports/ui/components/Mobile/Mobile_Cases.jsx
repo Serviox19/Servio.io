@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class MobileCases extends Component {
   constructor() {
-    super()
+    super();
   }
 
   mobileCases() {
@@ -19,7 +19,7 @@ export default class MobileCases extends Component {
     return this.mobileCases().map((project) => {
       return (
         <div key={project._id}>
-          <a href={project.url}>
+          <a href={project.url} style={{ backgroundColor: `${project.bg_color}` }}>
             <img src={project.logo} />
           </a>
         </div>
@@ -29,7 +29,7 @@ export default class MobileCases extends Component {
 
   render() {
     return (
-      <div>
+      <div id="mobile_cases">
         <h1>Cases</h1>
         {this.renderMobileCases()}
       </div>

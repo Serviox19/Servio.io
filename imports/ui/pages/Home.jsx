@@ -5,10 +5,12 @@ import About from '../components/Home/About';
 import Cases from '../components/Home/Cases';
 import { Contact } from '../components/Home/Contact';
 import Scrollbar from 'smooth-scrollbar';
+
 //Mobile
 import MobileNav from '../components/Mobile/Mobile_Nav';
-import MobileAbout from '../components/Mobile/Mobile_About';
 import MobileCases from '../components/Mobile/Mobile_Cases';
+import { MobileAbout } from '../components/Mobile/Mobile_About';
+import { MobileFooter } from '../components/Mobile/Mobile_Footer';
 
 class Home extends Component {
 

@@ -27,5 +27,9 @@
 
 
 /*********************************
-  All Responsive Styles Here
+  All Mobile Styles
 *********************************/
+@import "{}/imports/ui/styles/components/mobile/nav.scss";
+@import "{}/imports/ui/styles/components/mobile/about.scss";
+@import "{}/imports/ui/styles/components/mobile/cases.scss";
+@import "{}/imports/ui/styles/components/mobile/footer.scss";
