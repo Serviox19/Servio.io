@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Scrollbar from 'smooth-scrollbar';
 
 class Cases extends Component {
+  constructor() {
+    super();
+  }
 
   componentDidMount() {
     var scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
