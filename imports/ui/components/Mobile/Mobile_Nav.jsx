@@ -6,7 +6,14 @@ class MobileNav extends Component {
   }
 
   componentDidMount() {
-    //jquery
+    $(window).scroll(function () {
+      if ($(window).scrollTop() < 60) {
+        $('#mobile_nav').removeClass('fixed');
+      }
+      if ($(window).scrollTop() > 60) {
+        $('#mobile_nav').addClass('fixed');
+      }
+    });
   }
 
   render() {
@@ -14,7 +21,7 @@ class MobileNav extends Component {
       <nav id="mobile_nav">
         <div className="wrapper">
           <h1>Servio.io</h1>
-          <button>
+          <button onClick={() => alert('Nav Toggle!')}>
             <div>
               <span></span>
               <span></span>

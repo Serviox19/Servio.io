@@ -30,11 +30,7 @@ class Home extends Component {
 
     return (
       <div>
-        {isDesktop ? (
-          <DesktopView />
-        ) : (
-          <MobileView />
-        )}
+        {isDesktop ? <DesktopView /> : <MobileView />}
       </div>
     );
   }

@@ -25,15 +25,3 @@
   cursor: pointer;
   color: $white-color;
 }
-
-@media screen and (max-width: 999px) {
-  #home-page {
-    display: none !important;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  #mobile-home {
-    display: none !important;
-  }
-}

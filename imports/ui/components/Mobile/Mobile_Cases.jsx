@@ -18,8 +18,8 @@ export default class MobileCases extends Component {
   renderMobileCases() {
     return this.mobileCases().map((project) => {
       return (
-        <div key={project._id}>
-          <a href={project.url} style={{ backgroundColor: `${project.bg_color}` }}>
+        <div key={project._id} className="wrapper">
+          <a className="case" href={project.url} style={{ backgroundColor: `${project.bg_color}` }}>
             <img src={project.logo} />
           </a>
         </div>

@@ -10,6 +10,7 @@ export const MobileView = () => {
       <MobileNav />
       <MobileAbout />
       <MobileCases />
+      <MobileFooter />
     </div>
   );
 }
