@@ -16,9 +16,7 @@ class Helicopter extends Component {
     });
   }
 
-  componentDidMount() {
-    //jquery
-  }
+  componentDidMount() {}
 
   render() {
     return (

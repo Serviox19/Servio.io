@@ -147,14 +147,14 @@ class Resume extends Component {
             <div className="wrapper">
               <h1>References</h1>
               <div className="block">
-                <h3>Aaron Dielman</h3>
-                <h5>Project Manager at Ockupy Inc</h5>
-                <p>(973)&nbsp;710-7077</p>
-              </div>
-              <div className="block">
                 <h3>Ivan Baena</h3>
                 <h5>Front End Developer at Bed Bath &amp; Beyond</h5>
                 <p>(201)&nbsp;657-9022</p>
+              </div>
+              <div className="block">
+                <h3>Moshe Amsel</h3>
+                <h5>Sales Engineer / Project Manager at Databit</h5>
+                <p>(845)&nbsp;517-8477</p>
               </div>
             </div>
           </div>
