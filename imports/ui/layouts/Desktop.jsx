@@ -3,7 +3,7 @@ import Header from '../components/Home/Header';
 import Nav from '../components/Nav';
 import About from '../components/Home/About';
 import Cases from '../components/Home/Cases';
-import { Contact } from '../components/Home/Contact';
+import Contact from '../components/Home/Contact';
 import Scrollbar from 'smooth-scrollbar';
 
 export default class DesktopView extends Component {
