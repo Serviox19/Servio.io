@@ -29,9 +29,9 @@ export default class DesktopView extends Component {
 
     scrollbar.addListener(function () {
 
-      let one = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.banner > #one');
-      let two = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.banner > #two');
-      let three = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.banner > #three');
+      let one = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.wrapper > div.banner > #one');
+      let two = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.wrapper > div.banner > #two');
+      let three = document.querySelector('#home-page > div.scroll-content > div.load-wrapper > div.about > div.wrapper > div.banner > #three');
       let scrollTarget = scrollbar.isVisible(two);
 
       function animate() {
