@@ -8,7 +8,7 @@ export default class Contact extends Component {
   }
 
   componentDidMount() {
-    $("#donate #donate-btn").on('mouseover', function () {
+    $("#donate-btn").on('mouseover', function () {
       Bert.defaults = {
         hideDelay: 5000,
         style: 'fixed-top',

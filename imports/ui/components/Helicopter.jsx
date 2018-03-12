@@ -21,8 +21,11 @@ class Helicopter extends Component {
   render() {
     return (
       <div className="helicopter_wrapper">
-        <div className="balloon right" onClick={this.handleHireMe.bind(this)}>
-          <span className="hire-link">Hire&nbsp;Me!</span>
+        <div className="balloon right">
+          <span className="hire-link"
+            onClick={this.handleHireMe.bind(this)}>
+            Hire&nbsp;Me!
+          </span>
         </div>
         <div className="helicopter">
           <img className="helicopter_body" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/20212/bladeless_helicopter.png" alt="Helicopter with no blades" />
