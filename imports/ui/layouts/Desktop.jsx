@@ -67,8 +67,8 @@ export default class DesktopView extends Component {
   render() {
     return (
       <div id="home-page">
-        <Nav />
         <Header />
+        <Nav />
         <div className="load-wrapper">
           <About />
           <Cases />
