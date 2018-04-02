@@ -26,7 +26,6 @@ class About extends Component {
           <div className="info">
             <div className="intro">
               <h1>Bonjour</h1>
-              <h2>My Name is Servio Mora</h2>
               <h2>I'm A Full Stack Web Developer</h2>
             </div>
             <div className="bio">
