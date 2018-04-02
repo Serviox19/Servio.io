@@ -7,14 +7,19 @@ class Cases extends Component {
   }
 
   componentDidMount() {
-    var scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
+    const desktopOffset = 1500;
+    const laptopOffset = 1100;
+    const scrollbar = Scrollbar.init(document.querySelector('#home-page'), {
       'speed':'3',
       'overscrollEffect':'bounce',
       'damping':'.05'
     });
 
+    let offset = $(window).height() < 700 ? laptopOffset : desktopOffset;
+
     scrollbar.addListener(function () {
-      if (scrollbar.offset.y > 1500) {
+      console.log(scrollbar.offset.y);
+      if (scrollbar.offset.y > offset) {
         $('#row2 > .left').addClass('madd');
         $('#big-left').addClass('cami');
         $('#top').addClass('haute');
