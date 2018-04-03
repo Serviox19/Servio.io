@@ -3,7 +3,7 @@ import { check } from 'meteor/check';
 import { Email } from 'meteor/email';
 
 Meteor.methods({
-  sendEmail:function (message) {
+  sendEmail: function(message) {
     check(message, Object);
 
     Meteor.defer(() => {

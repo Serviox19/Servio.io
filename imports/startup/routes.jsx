@@ -22,3 +22,21 @@ FlowRouter.route('/resume', {
     });
   }
 });
+
+// FlowRouter.route('/blog', {
+//   action() {
+//     mount(App, {
+//       content: <Blog />
+//     });
+//   }
+// });
+//
+// FlowRouter.route('/blog/:id', {
+//   action(params) {
+//     mount(App, {
+//       content: <BlogPost
+//         postId={params.id}
+//       />
+//     });
+//   }
+// });
