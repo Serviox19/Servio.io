@@ -14,6 +14,10 @@ class MobileNav extends Component {
         $('#mobile_nav').addClass('fixed');
       }
     });
+
+    $('#nav-icon').on('click', function () {
+      $(this).toggleClass('open');
+    });
   }
 
   render() {
@@ -21,13 +25,15 @@ class MobileNav extends Component {
       <nav id="mobile_nav">
         <div className="wrapper">
           <h1>Servio.io</h1>
-          <button onClick={() => alert('Nav Toggle!')}>
-            <div>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
+          <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className="dropdown"></div>
         </div>
       </nav>
     );
