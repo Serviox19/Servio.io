@@ -1,0 +1,45 @@
+#mobile_footer {
+  width: 100%;
+  height: auto;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 1em;
+
+      span {
+        display: flex;
+        flex-direction: row;
+        width: 50vw;
+        justify-content: space-around;
+        align-items: center;
+
+         a {
+
+           img {
+             width: 30px;
+             height: 30px;
+           }
+         }
+      }
+    }
+
+    .copyright {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  }
+}
