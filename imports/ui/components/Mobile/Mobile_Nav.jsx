@@ -15,8 +15,9 @@ class MobileNav extends Component {
       }
     });
 
-    $('#nav-icon').on('click', function () {
+    $('#nav-icon').on('tap', function () {
       $(this).toggleClass('open');
+      $('#mobile_nav .dropdown').toggleClass('show');
     });
   }
 
@@ -33,7 +34,6 @@ class MobileNav extends Component {
             <span></span>
             <span></span>
           </div>
-          <div className="dropdown"></div>
         </div>
       </nav>
     );

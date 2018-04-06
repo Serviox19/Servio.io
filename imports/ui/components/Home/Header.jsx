@@ -63,7 +63,7 @@ class Header extends Component {
           <h2>Servio Mora <br /> Web Developer</h2>
         </div>
         <span className="arrow-link">
-          <a><i className="material-icons" style={{fontSize:48}}>arrow_downward</i></a>
+          <a><i className="fa fa-arrow-down" style={{fontSize:35}}></i></a>
         </span>
       </div>
     );

@@ -74,7 +74,9 @@ export default class DesktopView extends Component {
           <Cases />
           <Contact />
         </div>
-        <a id="scrollTop" onClick={() => this.scrollTop() }><i className="material-icons" style={{fontSize:30}}>keyboard_arrow_up</i></a>
+        <a id="scrollTop" onClick={() => this.scrollTop() }>
+          <i className="fa fa-arrow-up" style={{fontSize:25}} aria-hidden="true"></i>
+        </a>
       </div>
     );
   }

@@ -22,7 +22,7 @@ class Home extends Component {
   }
 
   updateView() {
-    this.setState({ isDesktop: window.innerWidth >= 1000 })
+    this.setState({ isDesktop: window.innerWidth >= 1000 });
   }
 
   render() {

@@ -5,6 +5,14 @@ export default class MobileCases extends Component {
     super();
   }
 
+  componentDidMount() {
+    const swiper = new Swiper('.swiper-container', {
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      mousewheelControl: false,
+    });
+  }
+
   mobileCases() {
     return [
       {_id: 1, url: 'https://maddcoffee.com', logo: '/images/logos/madd-logo.png', bg_img: '/images/cases/madd.jpg', bg_color: '#8E2051'},

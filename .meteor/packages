@@ -25,6 +25,6 @@ themeteorchef:bert
 juliancwirko:postcss
 
 react-meteor-data
-accounts-ui
-accounts-password
+accounts-ui@1.1.9
+accounts-password@1.4.0
 momentjs:moment
