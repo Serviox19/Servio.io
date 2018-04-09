@@ -1,5 +1,15 @@
+#mobile_intro {
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #mobile_about {
-  height: 300px;
+  height: calc(100vh - 70px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

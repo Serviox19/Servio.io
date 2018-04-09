@@ -12,8 +12,9 @@
     line-height: 70px;
     position: relative;
 
-    h1 {
+    .title {
       color: #000;
+      cursor: pointer;
     }
 
     #nav-icon {
@@ -147,6 +148,7 @@
         height: 50px;
         line-height: 50px;
         opacity: 0;
+        transform-origin: top center;
         animation: menu .4s ease-in-out forwards;
 
         &:hover {
@@ -160,11 +162,15 @@
         a {
           text-decoration: none;
           color: rgba(255,255,255,0.8);
+
+          &:active {
+            color: #F5F5F5;
+          }
         }
       }
 
       .toggled {
-        display: block !important;
+        display: block;
       }
     }
   }
@@ -173,7 +179,7 @@
 @keyframes menu {
   0% {
     opacity: 0;
-    transform: rotateX(-90deg) translateY(30px);
+    transform: rotateX(-90deg) translateY(50px);
   }
   100% {
     opacity: 1;

@@ -19,13 +19,21 @@ class MobileNav extends Component {
       $(this).toggleClass('open');
       $('#mobile_nav').find('.dropdown-menu > li').toggleClass('toggled');
     });
+
+    $('.dropdown-menu > li > a').on('click', function () {
+      $('#nav-icon').toggleClass('open');
+      $('#mobile_nav').find('.dropdown-menu > li').toggleClass('toggled');
+    });
   }
 
   render() {
     return (
       <nav id="mobile_nav">
         <div className="wrapper">
-          <h1>Servio.io</h1>
+          <a className="title"><h1
+            onClick={() =>
+              $('html, body').animate({ scrollTop: 0 }, 400)
+            }>Servio.io</h1></a>
           <div id="nav-icon">
             <span></span>
             <span></span>
@@ -35,8 +43,9 @@ class MobileNav extends Component {
             <span></span>
           </div>
           <ul className="dropdown-menu">
-            <li><a href="#">Cases</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a>About</a></li>
+            <li><a>Cases</a></li>
+            <li><a href="/blog">Blog</a></li>
           </ul>
         </div>
       </nav>

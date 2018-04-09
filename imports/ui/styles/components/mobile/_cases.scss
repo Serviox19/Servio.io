@@ -1,36 +1,37 @@
 #mobile_cases {
-  background-color: #121212;
 
-  h1 {
-    text-align: center;
-    padding: 1em 0;
-    color: #F5F5F5;
-    font-size: 20px;
-  }
-
-  .wrapper {
+  .swiper-container {
+    height: calc(100vh - 70px);
     width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
 
-    .case {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+    .swiper-slide {
+      height: 100%;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: space-around;
       align-items: center;
 
-      img {
+      .swiper-slide-image {
         max-width: 90%;
         max-height: 100%;
+      }
+
+      .link {
+        height: 40px;
+        line-height: 40px;
+        width: 125px;
+        text-align: center;
+        text-decoration: none;
+        background: #CACBCD;
+        color: #000;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+
+        .fa {
+          font-size: 12px;
+          vertical-align: middle;
+        }
       }
     }
   }

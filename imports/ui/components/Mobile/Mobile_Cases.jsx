@@ -10,6 +10,9 @@ export default class MobileCases extends Component {
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
       mousewheelControl: false,
+      pagination: {
+	      el: '.swiper-pagination'
+	    },
     });
   }
 
@@ -26,10 +29,9 @@ export default class MobileCases extends Component {
   renderMobileCases() {
     return this.mobileCases().map((project) => {
       return (
-        <div key={project._id} className="wrapper">
-          <a className="case" href={project.url} style={{ backgroundColor: `${project.bg_color}` }}>
-            <img src={project.logo} />
-          </a>
+        <div className="swiper-slide" key={project._id} style={{ backgroundColor: `${project.bg_color}` }}>
+          <img className="swiper-slide-image" src={project.logo} />
+          <a className="link" href={project.url}>View&nbsp;&nbsp;<i className="fa fa-arrow-right"></i></a>
         </div>
       );
     });
@@ -38,8 +40,12 @@ export default class MobileCases extends Component {
   render() {
     return (
       <div id="mobile_cases">
-        <h1>Cases</h1>
-        {this.renderMobileCases()}
+        <div className="swiper-container">
+          <div className="swiper-wrapper">
+            {this.renderMobileCases()}
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
       </div>
     );
   }
