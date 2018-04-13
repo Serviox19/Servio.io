@@ -29,7 +29,9 @@ export default class MobileCases extends Component {
   renderMobileCases() {
     return this.mobileCases().map((project) => {
       return (
-        <div className="swiper-slide" key={project._id} style={{ backgroundColor: `${project.bg_color}` }}>
+        <div className="swiper-slide"
+          key={project._id}
+          style={{ backgroundColor: `${project.bg_color}` }}>
           <img className="swiper-slide-image" src={project.logo} />
           <a className="link" href={project.url}>View&nbsp;&nbsp;<i className="fa fa-arrow-right"></i></a>
         </div>
