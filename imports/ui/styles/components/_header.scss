@@ -40,9 +40,8 @@
         position: absolute;
         top: 0;
         left: 0;
-
-        -webkit-animation: sk-bounce 2.3s infinite ease-in-out;
         animation: sk-bounce 2.3s infinite ease-in-out;
+        -webkit-animation: sk-bounce 2.3s infinite ease-in-out;
       }
 
       @keyframes sk-bounce {
@@ -62,8 +61,8 @@
 
       .double-bounce2 {
         background-color: #DDE0E3;
-        -webkit-animation-delay: -1.0s;
         animation-delay: -1.0s;
+        -webkit-animation-delay: -1.0s;
       }
     }
   }
@@ -89,8 +88,10 @@
       text-align: center;
       animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
       -webkit-animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+      -moz-animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
       animation-play-state: paused;
       -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
 
       &:focus {
         outline: none !important;
@@ -102,8 +103,10 @@
     background: url('/images/code.gif') center center no-repeat;
     background-size: cover;
     background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
     -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -moz-background-clip: text !important;
+    -moz-text-fill-color: transparent !important;
     transition: all 0.3s ease-in;
   }
 
@@ -124,19 +127,34 @@
 
   /* The typing effect */
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    0% { width: 0 }
+    100% { width: 100% }
+  }
+  @-webkit-keyframes typing {
+    0% { width: 0 }
+    100% { width: 100% }
+  }
+  @-moz-keyframes typing {
+    0% { width: 0 }
+    100% { width: 100% }
   }
 
   /* The typewriter cursor effect */
   @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+    0% { border-color: transparent }
+    100% { border-color: orange }
+  }
+  @-webkit-keyframes blink-caret {
+    0% { border-color: transparent }
+    100% { border-color: orange }
+  }
+  @-moz-keyframes blink-caret {
+    0% { border-color: transparent }
+    100% { border-color: orange }
   }
 
-  @-moz-keyframes bounce {
-
-  	40% {
+  @keyframes bounce {
+    40% {
       transform:translateY(-30px);
     }
   	60% {
@@ -149,6 +167,18 @@
 
   @-webkit-keyframes bounce {
 
+  	40% {
+      transform:translateY(-30px);
+    }
+  	60% {
+      transform:translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @-moz-keyframes bounce {
   	40% {
       transform:translateY(-30px);
     }

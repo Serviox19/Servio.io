@@ -4,8 +4,11 @@
   top: 2em;
   left: -8% !important;
   animation: glide 14s linear infinite;
-  -webkit-animation-play-state: paused;
+  -webkit-animation: glide 14s linear infinite;
+  -moz-animation: glide 14s linear infinite;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   z-index: $helicopter-Zindex;
 
   .balloon {
@@ -79,6 +82,20 @@
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-play-state: running;
+    /* Webkit */
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: float;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Mozilla */
+    -moz-animation-duration: 1s;
+    -moz-animation-name: float;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-direction: alternate;
+    -moz-animation-play-state: running;
 
 
     .blade {
@@ -90,7 +107,20 @@
       animation-iteration-count: infinite;
       animation-timing-function: linear;
       animation-play-state: running;
+      /* Webkit */
+      -webkit-animation-duration: 0.2s;
+      -webkit-animation-name: spin;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-play-state: running;
+      /* Mozilla */
+      -moz-animation-duration: 0.2s;
+      -moz-animation-name: spin;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      -moz-animation-play-state: running;
     }
+
     .tailblade {
       width: 3px;
       height: 7px;
@@ -104,6 +134,18 @@
       animation-iteration-count: infinite;
       animation-timing-function: linear;
       animation-play-state: running;
+      /* Webkit */
+      -webkit-animation-duration: .1s;
+      -webkit-animation-name: tailblade;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-play-state: running;
+      /* Mozilla */
+      -moz-animation-duration: .1s;
+      -moz-animation-name: tailblade;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      -moz-animation-play-state: running;
     }
   }
 } /* End Helicopter Wrapper */
@@ -118,38 +160,106 @@
 }
 
 
-/* ### ### */
-
 
 @keyframes spin {
-  from {
+  0% {
     transform:rotateY(0deg);
   }
 
-  to {
+  100% {
      transform:rotateY(-360deg);
   }
 }
 
+@-webkit-keyframes spin {
+  0% {
+    transform:rotateY(0deg);
+  }
+
+  100% {
+     transform:rotateY(-360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  0% {
+    transform:rotateY(0deg);
+  }
+
+  100% {
+     transform:rotateY(-360deg);
+  }
+}
+
+/* ############ */
+
 @keyframes tailblade {
-  from {
+  0% {
     transform:rotate3d(0,0,1,0deg);
   }
 
-  to {
+  100% {
      transform:rotate3d(0,0,1,-360deg);
   }
 }
+
+@-webkit-keyframes tailblade {
+  0% {
+    transform:rotate3d(0,0,1,0deg);
+  }
+
+  100% {
+     transform:rotate3d(0,0,1,-360deg);
+  }
+}
+
+@-moz-keyframes tailblade {
+  0% {
+    transform:rotate3d(0,0,1,0deg);
+  }
+
+  100% {
+     transform:rotate3d(0,0,1,-360deg);
+  }
+}
+
+/* ############ */
+
 @keyframes float {
-  from {
+  0% {
     transform:translateY(10px) rotate3d(0,0,1,5deg);
     transform-origin: 0% 100%;
   }
 
-  to {
+  100% {
      transform:translateY(-8px) rotate3d(0,0,1,-2deg);
   }
 }
+
+@-webkit-keyframes float {
+  0% {
+    transform:translateY(10px) rotate3d(0,0,1,5deg);
+    transform-origin: 0% 100%;
+  }
+
+  100% {
+     transform:translateY(-8px) rotate3d(0,0,1,-2deg);
+  }
+}
+
+@-moz-keyframes float {
+  0% {
+    transform:translateY(10px) rotate3d(0,0,1,5deg);
+    transform-origin: 0% 100%;
+  }
+
+  100% {
+     transform:translateY(-8px) rotate3d(0,0,1,-2deg);
+  }
+}
+
+/* ############ */
+
 @keyframes glide {
   0% {
     left: -5%;
@@ -158,6 +268,7 @@
     left: 105%;
   }
 }
+
 @-webkit-keyframes glide {
   0% {
     left: -5%;

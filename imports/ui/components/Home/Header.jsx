@@ -33,7 +33,7 @@ class Header extends Component {
     }
     setTimeout(spinner, 3000); //spinny timer 3000
     setTimeout(() => {
-      $('.header-items').addClass('animate');
+      $('.header-items > h2').addClass('animate');
     }, 6200);
 
     $('.helicopter_wrapper').mouseover(function () {

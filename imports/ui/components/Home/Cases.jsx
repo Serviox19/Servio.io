@@ -18,7 +18,6 @@ class Cases extends Component {
     let offset = $(window).height() < 700 ? laptopOffset : desktopOffset;
 
     scrollbar.addListener(function () {
-      console.log(scrollbar.offset.y);
       if (scrollbar.offset.y > offset) {
         $('#row2 > .left').addClass('madd');
         $('#big-left').addClass('cami');
