@@ -86,7 +86,8 @@
         background: #000;
         border: none;
         transition: .3s ease-in-out;
-        transform: translateY(-4px) translateX(1px);
+        -webkit-transform: translateY(-4px) translateX(1px);
+        -moz-transform: translateY(-4px) translateX(1px);
       }
     }
 
@@ -108,6 +109,7 @@
       box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.25);
       outline: none !important;
       z-index: 2;
+      cursor: pointer !important;
 
       #nav-icon {
         margin: 0 auto;
@@ -115,7 +117,7 @@
         position: relative;
         width: 22px;
         height: 18px;
-        cursor: pointer;
+        cursor: pointer !important;
         transform: rotateY(0);
         transition: all 0.5s ease-in-out;
 
@@ -153,7 +155,13 @@
       }
 
       #nav-icon.rotate {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
         transform: rotateY(180deg);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
       }
 
@@ -161,16 +169,22 @@
         span {
 
           &:nth-child(1) {
-            transform: translate3d(-7px,4px,0) rotate(-45deg) scaleX(.5);
+            -webkit-transform: translate3d(-7px,4px,0) rotate(-45deg) scaleX(.5);
+            -moz-transform: translate3d(-7px,4px,0) rotate(-45deg) scaleX(.5);
+            -o-transform: translate3d(-7px,4px,0) rotate(-45deg) scaleX(.5);
           }
 
           &:nth-child(2) {
             top: 50%;
-            transform: translate3d(0,-50%,0);
+            -webkit-transform: translate3d(0,-50%,0);
+            -moz-transform: translate3d(0,-50%,0);
+            -o-transform: translate3d(0,-50%,0);
           }
 
           &:nth-child(3) {
-            transform: translate3d(-7px,-4px,0) rotate(45deg) scaleX(.6);
+            -webkit-transform: translate3d(-7px,-4px,0) rotate(45deg) scaleX(.6);
+            -moz-transform: translate3d(-7px,-4px,0) rotate(45deg) scaleX(.6);
+            -o-transform: translate3d(-7px,-4px,0) rotate(45deg) scaleX(.6);
           }
         }
       }

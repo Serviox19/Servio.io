@@ -100,14 +100,12 @@
   }
 
   .animate {
-    background: url('/images/code.gif') center center no-repeat;
-    background-size: cover;
     background-clip: text !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
-    -moz-background-clip: text !important;
-    -moz-text-fill-color: transparent !important;
     transition: all 0.3s ease-in;
+    background: url('/images/code.gif') center center no-repeat;
+    background-size: cover;
   }
 
   .arrow-link {
