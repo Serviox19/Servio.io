@@ -90,7 +90,6 @@
 
           &:focus {
             outline: none;
-  	        color: #3c8ddc;
           }
 
           &::after {
@@ -128,7 +127,7 @@
           &:hover {
             background-color: $blue-color;
             color: $white-color;
-            transition: all .3s ease-in-out forwards;
+            transition: all .3s ease-in-out;
           }
         }
       }

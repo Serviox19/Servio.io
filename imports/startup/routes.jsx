@@ -6,7 +6,11 @@ import { mount } from 'react-mounter';
 import { App } from '../ui/layouts/App';
 import Home from '../ui/pages/Home';
 import Resume from '../ui/pages/Resume';
+import LoginPage from '../ui/pages/Login';
+import Dashboard from '../ui/pages/Dashboard';
+import Blog from '../ui/pages/Blog';
 
+//static routes
 FlowRouter.route('/', {
   action() {
     mount(App, {
@@ -23,20 +27,43 @@ FlowRouter.route('/resume', {
   }
 });
 
-// FlowRouter.route('/blog', {
-//   action() {
-//     mount(App, {
-//       content: <Blog />
-//     });
-//   }
-// });
-//
-// FlowRouter.route('/blog/:id', {
-//   action(params) {
-//     mount(App, {
-//       content: <BlogPost
-//         postId={params.id}
-//       />
-//     });
-//   }
-// });
+//blog routes
+FlowRouter.route('/blog', {
+  action() {
+    mount(App, {
+      content: <Blog />
+    });
+  }
+});
+
+FlowRouter.route('/blog/:id', {
+  action(params) {
+    mount(App, {
+      content: <BlogPost
+        postId={params.id}
+      />
+    });
+  }
+});
+
+//admin console
+FlowRouter.route('/login', {
+  action() {
+    mount(App, {
+      content: <LoginPage />
+    });
+  }
+})
+
+FlowRouter.route('/dashboard', {
+  action() {
+    if (!Meteor.userId()) {
+      Bert.alert('Please Login', 'danger', 'fixed-top', 'fa-frown-o');
+      FlowRouter.redirect('/');
+    } else {
+      mount(App, {
+        content: <Dashboard />
+      });
+    }
+  }
+})
