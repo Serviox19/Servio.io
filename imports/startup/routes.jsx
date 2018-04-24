@@ -59,7 +59,7 @@ FlowRouter.route('/dashboard', {
   action() {
     if (!Meteor.userId()) {
       Bert.alert('Please Login', 'danger', 'fixed-top', 'fa-frown-o');
-      FlowRouter.redirect('/');
+      FlowRouter.redirect('/login');
     } else {
       mount(App, {
         content: <Dashboard />

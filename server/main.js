@@ -1,5 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Mongo } from 'meteor/mongo';
+import { Accounts } from 'meteor/accounts-base';
 
 //Get access to Blog posts
 // import { Posts } from '../imports/collections/posts';
