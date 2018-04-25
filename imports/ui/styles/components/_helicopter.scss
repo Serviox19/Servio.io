@@ -3,11 +3,15 @@
   position: absolute;
   top: 2em;
   left: -8% !important;
-  animation: glide 14s linear infinite;
-  -webkit-animation: glide 14s linear infinite;
+  animation: glide 14s linear infinite !important;
+  /* Webkit */
+  -webkit-animation-name: glide;
+  -webkit-animation-duration: 14s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  /* */
   -moz-animation: glide 14s linear infinite;
   animation-play-state: paused;
-  -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   z-index: $helicopter-Zindex;
 
@@ -260,7 +264,7 @@
 
 /* ############ */
 
-@keyframes glide {
+@-webkit-keyframes glide {
   0% {
     left: -5%;
   }
@@ -269,7 +273,7 @@
   }
 }
 
-@-webkit-keyframes glide {
+@keyframes glide {
   0% {
     left: -5%;
   }

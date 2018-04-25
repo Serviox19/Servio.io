@@ -25,6 +25,7 @@ class Header extends Component {
       $('.loader').css({ display: 'none' });
       $('.load-wrapper').css({ display: 'flex' });
       $('#navigation').css({ opacity: 1 });
+      $('.header-items > h2').addClass('type');
       $('.header-items > h2').css({ animationPlayState: 'running' });
       $('.helicopter_wrapper').css({
         animationPlayState: 'running',

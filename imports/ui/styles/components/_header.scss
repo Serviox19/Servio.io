@@ -86,17 +86,22 @@
       text-transform: uppercase;
       line-height: 2.5em;
       text-align: center;
-      animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
-      -webkit-animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
-      -moz-animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
-      animation-play-state: paused;
-      -webkit-animation-play-state: paused;
-      -moz-animation-play-state: paused;
-
       &:focus {
         outline: none !important;
       }
     }
+  }
+
+  .type {
+    animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+    /* Webkit */
+    -webkit-animation-name: typing, blink-caret;
+    -webkit-animation-duration: 3s, 0.75s;
+    -webkit-animation-timing-function: steps(40, end), step-end;
+    /* */
+    -moz-animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+    animation-play-state: paused;
+    -moz-animation-play-state: paused;
   }
 
   .animate {
@@ -124,11 +129,11 @@
   /** KeyFrames **/
 
   /* The typing effect */
-  @keyframes typing {
+  @-webkit-keyframes typing {
     0% { width: 0 }
     100% { width: 100% }
   }
-  @-webkit-keyframes typing {
+  @keyframes typing {
     0% { width: 0 }
     100% { width: 100% }
   }
