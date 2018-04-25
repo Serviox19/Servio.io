@@ -36,14 +36,6 @@ class Header extends Component {
     setTimeout(() => {
       $('.header-items > h2').addClass('animate');
     }, 6200);
-
-    $('.helicopter_wrapper').mouseover(function () {
-      $(this).css({ animationPlayState: 'paused' });
-    });
-
-    $('.helicopter_wrapper').mouseout(function () {
-      $(this).css({ animationPlayState: 'running' });
-    });
   }
 
   componentDidUpdate() {
