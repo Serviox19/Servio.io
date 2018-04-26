@@ -7,8 +7,10 @@ import { App } from '../ui/layouts/App';
 import Home from '../ui/pages/Home';
 import Resume from '../ui/pages/Resume';
 import LoginPage from '../ui/pages/Login';
-import Dashboard from '../ui/pages/Dashboard';
+import { Dashboard } from '../ui/pages/Dashboard';
 import Blog from '../ui/pages/Blog';
+import { Analytics } from '../ui/components/Dashboard/Analytics';
+import BlogAdmin from '../ui/components/Dashboard/BlogAdmin';
 
 //static routes
 FlowRouter.route('/', {
@@ -53,9 +55,15 @@ FlowRouter.route('/login', {
       content: <LoginPage />
     });
   }
-})
+});
 
-FlowRouter.route('/dashboard', {
+var dashboardRoutes = FlowRouter.group({
+  prefix: '/dashboard',
+  name: 'dashboard'
+});
+
+// handling /admin route
+dashboardRoutes.route('/', {
   action() {
     if (!Meteor.userId()) {
       FlowRouter.go('/login');
@@ -69,5 +77,21 @@ FlowRouter.route('/dashboard', {
         content: <Dashboard />
       });
     }
+  }
+});
+
+dashboardRoutes.route('/', {
+  action() {
+    mount(Dashboard, {
+      content: <Analytics />
+    });
+  }
+})
+
+dashboardRoutes.route('/blog', {
+  action() {
+    mount(Dashboard, {
+      content: <BlogAdmin />
+    });
   }
 })
