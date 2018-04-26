@@ -57,7 +57,7 @@ FlowRouter.route('/login', {
 
 FlowRouter.route('/dashboard', {
   action() {
-    if (!Meteor.user().profile.role.includes("admin")) {
+    if (!Meteor.userId() || !Meteor.user().profile.role.includes("admin")) {
       Meteor.logout();
       Bert.alert('Please Login', 'danger', 'fixed-top', 'fa-frown-o');
       FlowRouter.go('/login');
