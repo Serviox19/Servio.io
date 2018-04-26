@@ -57,10 +57,13 @@ FlowRouter.route('/login', {
 
 FlowRouter.route('/dashboard', {
   action() {
-    if (!Meteor.userId() || !Meteor.user().profile.role.includes("admin")) {
-      Meteor.logout();
-      Bert.alert('Please Login', 'danger', 'fixed-top', 'fa-frown-o');
+    if (!Meteor.userId()) {
       FlowRouter.go('/login');
+      Bert.alert('Please Login', 'danger', 'fixed-top', 'fa-frown-o');
+    } else if (typeof Meteor.user().profile === 'undefined' || !Meteor.user().profile.role.includes("admin")) {
+      Meteor.logout();
+      FlowRouter.go('/login');
+      Bert.alert('Sorry No Access!', 'danger', 'fixed-top', 'fa-frown-o');
     } else {
       mount(App, {
         content: <Dashboard />

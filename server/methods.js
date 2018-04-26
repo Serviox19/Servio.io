@@ -14,5 +14,15 @@ Meteor.methods({
         text: `${message.message}`
       });
     });
+  },
+  sendWarningEmail: function () {
+    Meteor.defer(() => {
+      Email.send({
+        to: 'Servio Mora <servio.mora19@gmail.com>',
+        from: `Servio.io`,
+        subject: `Suspicious Login`,
+        text: `There has been a suspicious login attempt, please check Users Database, and or temorarily shit down site!`
+      })
+    })
   }
 });

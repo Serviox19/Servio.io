@@ -25,14 +25,15 @@ export default class LoginPage extends Component {
         if (error) {
           Bert.alert('Not Valid User!', 'danger');
           _this.clearLoginForm();
-        } else if (typeof Meteor.user().profile.role === 'undefined' || !Meteor.user().profile.role.includes("admin")) {
+        } else if (typeof Meteor.user().profile === 'undefined' || !Meteor.user().profile.role.includes("admin")) {
           Meteor.logout();
           FlowRouter.go('/login');
           _this.clearLoginForm();
+          _this.sendCautionEmail();
           Bert.alert('Sorry No access!', 'danger', 'fixed-top', 'fa-frown-o');
         } else {
           FlowRouter.go('/dashboard');
-          Bert.alert('Login Successful', 'success');
+          Bert.alert('Login Successful', 'success', 'growl-top-right');
         }
       });
     }
@@ -41,6 +42,10 @@ export default class LoginPage extends Component {
   clearLoginForm() {
     this.refs.username.value = '';
     this.refs.password.value = '';
+  }
+
+  sendCautionEmail() {
+    Meteor.call('sendWarningEmail');
   }
 
   render() {
