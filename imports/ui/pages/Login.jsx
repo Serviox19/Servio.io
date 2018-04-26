@@ -23,8 +23,13 @@ export default class LoginPage extends Component {
     } else {
       Meteor.loginWithPassword(username, password, function(error) {
         if (error) {
-          Bert.alert(error.reason, 'danger');
-          console.log(error.reason);
+          Bert.alert('Not Valid User!', 'danger');
+          _this.clearLoginForm();
+        } else if (typeof Meteor.user().profile.role === 'undefined' || !Meteor.user().profile.role.includes("admin")) {
+          Meteor.logout();
+          FlowRouter.go('/login');
+          _this.clearLoginForm();
+          Bert.alert('Sorry No access!', 'danger', 'fixed-top', 'fa-frown-o');
         } else {
           FlowRouter.go('/dashboard');
           Bert.alert('Login Successful', 'success');
