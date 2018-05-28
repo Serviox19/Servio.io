@@ -117,14 +117,15 @@
           border-radius: 1.5em;
           width: 150px;
           height: 50px;
-          border: solid 1.2px #000;
-          background-color: $white-color;
-          color: #000;
+          border: solid 1.2px $white-color;
+          background-color: transparent;
+          color: $white-color;
           text-align: center;
           line-height: 50px;
           text-decoration: none;
 
           &:hover {
+            border-color: $blue-color;
             background-color: $blue-color;
             color: $white-color;
             transition: all .3s ease-in-out;

@@ -16,9 +16,6 @@ export default class SideNav extends Component {
         <div className="menu">
           <ul>
             <li>
-              <a href="/dashboard">Home</a>
-            </li>
-            <li>
               <a href="/dashboard">Analytics</a>
               <div className="sub-menu">
                 <ul></ul>

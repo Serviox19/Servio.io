@@ -23,9 +23,9 @@ export default class TopNav extends Component {
 
   render() {
     return (
-      <nav>
+      <nav id="topnav">
         <div className="left">
-          <button id="side-nav-toggle"></button>
+          <button id="side-nav-toggle"><i className="fa fa-bars" aria-hidden="true"></i></button>
         </div>
         <div className="right">
           <a href="" onClick={this.logout}>Logout</a>

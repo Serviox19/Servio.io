@@ -68,25 +68,14 @@ dashboardRoutes.route('/', {
     if (!Meteor.userId()) {
       FlowRouter.go('/login');
       Bert.alert('Please Login', 'danger', 'fixed-top', 'fa-frown-o');
-    } else if (typeof Meteor.user().profile === 'undefined' || !Meteor.user().profile.role.includes("admin")) {
-      Meteor.logout();
-      FlowRouter.go('/login');
-      Bert.alert('Sorry No Access!', 'danger', 'fixed-top', 'fa-frown-o');
     } else {
       mount(App, {
-        content: <Dashboard />
+        content: <Dashboard content={ <Analytics /> } />
       });
     }
   }
 });
 
-dashboardRoutes.route('/', {
-  action() {
-    mount(Dashboard, {
-      content: <Analytics />
-    });
-  }
-})
 
 dashboardRoutes.route('/blog', {
   action() {

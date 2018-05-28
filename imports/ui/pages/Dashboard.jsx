@@ -4,11 +4,13 @@ import TopNav from '../components/Dashboard/TopNav';
 
 export const Dashboard = ({content}) => {
   return (
-    <div>
+    <div id="dashboard-page" style={{ background: '#FFFFFF' }}>
       <SideNav />
       <div id="dashboard-right">
         <TopNav />
-        {content}
+        <div id="canvas">
+          {content}
+        </div>
       </div>
     </div>
   );
