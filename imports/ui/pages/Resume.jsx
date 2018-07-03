@@ -45,20 +45,30 @@ class Resume extends Component {
           <div className="intro-wrapper">
             <div className="block">
               <div className="image"></div>
-              <span className="name"><h2>Servio Mora</h2></span>
+              <div className="my_info">
+                <span className="name"><h2>Servio Mora</h2></span> <br />
+                <span className="title"><h2>Full Stack Web Developer</h2></span>
+                <div className="links">
+                  <span><a target="_blank" href="http://github.com/serviox19">github.com/serviox19</a></span>
+                  <span><a target="_blank" href="http://servio.io">servio.io</a></span>
+                </div>
+              </div>
             </div>
-            <div className="block resume-about">
-              <h2 className="title">Full Stack Web Developer</h2> <br />
-              <h2 style={{ alignSelf: 'flex-start' }}>About Me</h2>
-              <p style={{ marginBottom: '1em' }}>My name is Servio Mora, a tech enthusiast turned developer looking to make an impact on the world through innovative software and unique user experiences.</p>
+            <div className="resume-about">
+              <h2>About Me</h2>
+              <p>My name is Servio Mora, a tech enthusiast turned developer looking to make an impact on the world through innovative software and unique user experiences.</p>
               <p>Constant self improvement and dedication to continuous education is how I keep progressing, and I'm not close to being finished.</p>
-            </div>
-            <div className="block info">
-              <h2>Address</h2>
-              <p>Clifton NJ 07012</p>
-              <h2>Contact</h2>
-              <p><span>servio.mora19@gmail.com</span> <br /> <span><a target="_blank" href="http://github.com/serviox19">github.com/serviox19</a></span> <br /> <span>973-934-5297</span></p>
-              <a target="_blank" href="http://servio.io">www.servio.io</a>
+              <div className="info">
+                <span>
+                  <h3>Contact</h3>&nbsp;&nbsp;
+                  <p>servio.mora19@gmail.com</p>
+                </span>
+                <span>973-934-5297</span>
+                <span>
+                  <h3>Location</h3>&nbsp;&nbsp;
+                  <p>Clifton NJ 07012</p>
+                </span>
+              </div>
             </div>
           </div> {/* end intro-wrapper */}
           <div className="exp-wrapper">
