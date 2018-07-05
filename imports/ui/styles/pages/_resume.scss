@@ -15,7 +15,7 @@ $highlight: #37FDFC;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      margin: 3em 10em 0 10em;
+      margin: 3em 0 0 10em;
 
       #home-link {
         text-decoration: none !important;
@@ -37,7 +37,6 @@ $highlight: #37FDFC;
       .block {
         width: 40%;
         margin: 0 auto;
-        padding: 0 1em;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -46,7 +45,7 @@ $highlight: #37FDFC;
         .image {
           height: 400px;
           background: #eee;
-          width: 90%;
+          width: 100%;
           margin: 0 auto;
         }
 
@@ -84,21 +83,28 @@ $highlight: #37FDFC;
       .resume-about {
         padding-top: 140px;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: baseline;
+        margin: 0 auto;
+        width: auto;
 
-        .info {
-          width: 100%;
+        .wrapper {
+          width: 80%;
+          margin: 0 auto;
+          height: 100%;
           display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: baseline;
+          flex-direction: column;
+          justify-content: space-around;
 
-          span {
-            display: inline-flex;
+          .info {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: baseline;
+
+            span {
+              display: inline-flex;
+              align-items: baseline;
+            }
           }
         }
       }
@@ -112,42 +118,10 @@ $highlight: #37FDFC;
       margin-top: 100px;
       font-family: 'Open Sans', sans-serif;
 
-      .education {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-
-        .block {
-          line-height: 1.7rem;
-          margin-bottom: 50px;
-
-          .location {
-            color: #636466;
-          }
-        }
-
-        h1 {
-          text-align: center;
-          position: relative;
-          font-weight: 600;
-          margin-bottom: 1.5em;
-
-          &::after {
-            content: "";
-            height: 2px;
-            width: 100%;
-            background: #231F20;
-            position: absolute;
-            bottom: -1.5rem;
-            left: 0;
-          }
-        }
-      }
-
       .work {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
 
         h1 {
           position: relative;
@@ -173,12 +147,21 @@ $highlight: #37FDFC;
           justify-content: space-between;
 
           .block {
-            width: 50%;
+            display: flex;
+            width: 100%;
             margin-bottom: 50px;
             line-height: 1.7rem;
 
-            .location {
-              color: #636466;
+            .position {
+              width: 100%;
+
+              .location {
+                color: #636466;
+              }
+            }
+
+            .description {
+              width: 100%;
             }
           }
         }
@@ -190,7 +173,7 @@ $highlight: #37FDFC;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      margin-top: 75px;
+      margin: 75px 0;
       font-family: 'Open Sans', sans-serif;
 
       .personal {
@@ -270,7 +253,7 @@ $highlight: #37FDFC;
       .professional {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
 
         h1 {
           position: relative;
@@ -296,7 +279,7 @@ $highlight: #37FDFC;
           justify-content: space-between;
 
           .skill {
-            width: 45%;
+            width: 30%;
             margin: 1.2em 0;
             position: relative;
 
@@ -329,51 +312,89 @@ $highlight: #37FDFC;
               height: .9em;
               z-index: -1;
               transform-origin: left center;
-              animation: stat 1s forwards;
+              animation: stat 2s forwards;
             }
           }
         }
       }
     }
 
-    .references {
-      width: 100%;
+    .extra-info {
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      margin: 2em 0 7em 0;
-      font-family: 'Open Sans', sans-serif;
+      justify-content: space-around;
+      align-items: baseline;
 
-      h1 {
-        position: relative;
-        font-weight: 600;
-        margin-bottom: 1em;
-        text-align: center;
+      .education {
+        display: flex;
+        flex-direction: column;
+        width: inherit;
 
-        &::after {
-          content: "";
-          height: 2px;
-          width: 100%;
-          background: #231F20;
-          position: absolute;
-          bottom: -1.5rem;
-          right: 0;
+        .block {
+          line-height: 1.7rem;
+          margin-bottom: 50px;
+
+          .location {
+            color: #636466;
+          }
+        }
+
+        h1 {
+          text-align: center;
+          position: relative;
+          font-weight: 600;
+          margin-bottom: 1.5em;
+
+          &::after {
+            content: "";
+            height: 2px;
+            width: 100%;
+            background: #231F20;
+            position: absolute;
+            bottom: -1.5rem;
+            left: 0;
+          }
         }
       }
 
-      .wrapper {
+      .references {
+        width: inherit;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Open Sans', sans-serif;
 
-        .block {
-          margin: 1em 0;
+        h1 {
+          position: relative;
+          font-weight: 600;
+          margin-bottom: 1em;
+          text-align: center;
 
-          h3 {
-            margin-bottom: 0.5em;
+          &::after {
+            content: "";
+            height: 2px;
+            width: 100%;
+            background: #231F20;
+            position: absolute;
+            bottom: -1.5rem;
+            right: 0;
           }
+        }
 
-          h5 {
-            margin-bottom: 0.5em;
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+
+          .block {
+            margin: 1em 0;
+
+            h3 {
+              margin-bottom: 0.5em;
+            }
+
+            h5 {
+              margin-bottom: 0.5em;
+            }
           }
         }
       }

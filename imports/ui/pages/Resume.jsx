@@ -55,23 +55,80 @@ class Resume extends Component {
               </div>
             </div>
             <div className="resume-about">
-              <h2>About Me</h2>
-              <p>My name is Servio Mora, a tech enthusiast turned developer looking to make an impact on the world through innovative software and unique user experiences.</p>
-              <p>Constant self improvement and dedication to continuous education is how I keep progressing, and I'm not close to being finished.</p>
-              <div className="info">
-                <span>
-                  <h3>Contact</h3>&nbsp;&nbsp;
-                  <p>servio.mora19@gmail.com</p>
-                </span>
-                <span>973-934-5297</span>
-                <span>
-                  <h3>Location</h3>&nbsp;&nbsp;
-                  <p>Clifton NJ 07012</p>
-                </span>
+              <div className="wrapper">
+                <h2>About Me</h2>
+                <p>My name is Servio Mora, a tech enthusiast turned developer looking to make an impact on the world through innovative software and unique user experiences.</p>
+                <p>Constant self improvement and dedication to continuous education is how I keep progressing, and I'm not close to being finished.</p>
+                <div className="info">
+                  <span>
+                    <h3>Contact</h3>&nbsp;&nbsp;
+                    <p>servio.mora19[at]gmail.com</p>
+                  </span>
+                  <span>973-934-5297</span>
+                  <span>
+                    <h3>Location</h3>&nbsp;&nbsp;
+                    <p>Clifton NJ 07012</p>
+                  </span>
+                </div>
               </div>
             </div>
           </div> {/* end intro-wrapper */}
           <div className="exp-wrapper">
+            <div className="work">
+              <h1>Work Experience</h1>
+              <div className="wrapper">
+                <div className="block">
+                  <div className="position">
+                    <h3>Full Stack Web Developer</h3>
+                    <h5>Ockupy Inc,&nbsp;&nbsp;May 2017 - March 2018</h5>
+                    <p className="location">Edgewater NJ</p>
+                  </div>
+                  <div className="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar porta ultrices. Cras pharetra suscipit urna a malesuada. Nulla sollicitudin, lectus eget vestibulum posuere, nibh enim blandit eros, non eleifend neque nulla ac nibh.
+                  </div>
+                </div>
+                <div className="block">
+                  <div className="position">
+                    <h3>Field Technician</h3>
+                    <h5>Databit,&nbsp;&nbsp;Oct. 2016 - April 2017</h5>
+                    <p className="location">Mahwah NJ</p>
+                  </div>
+                  <div className="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar porta ultrices. Cras pharetra suscipit urna a malesuada. Nulla sollicitudin, lectus eget vestibulum posuere, nibh enim blandit eros, non eleifend neque nulla ac nibh.
+                  </div>
+                </div>
+                <div className="block">
+                  <div className="position">
+                    <h3>Web Developer Intern</h3>
+                    <h5>Startup52,&nbsp;&nbsp;June - July 2016</h5>
+                    <p className="location">Brooklyn NY</p>
+                  </div>
+                  <div className="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar porta ultrices. Cras pharetra suscipit urna a malesuada. Nulla sollicitudin, lectus eget vestibulum posuere, nibh enim blandit eros, non eleifend neque nulla ac nibh.
+                  </div>
+                </div>
+                <div className="block">
+                  <div className="position">
+                    <h3>Deployment Technician</h3>
+                    <h5>Valley National Bank,&nbsp;&nbsp;Dec. 2015 - Apr 2016</h5>
+                    <p className="location">Wayne NJ</p>
+                  </div>
+                  <div className="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar porta ultrices. Cras pharetra suscipit urna a malesuada. Nulla sollicitudin, lectus eget vestibulum posuere, nibh enim blandit eros, non eleifend neque nulla ac nibh.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> {/* end exp-wrapper */}
+          <div className="skills-wrapper">
+            <div className="professional">
+              <h1>Professional Skills</h1>
+              <div className="wrapper">
+                {this.renderSkills()}
+              </div>
+            </div>
+          </div> {/* end skills-wrapper */}
+          <div className="extra-info">
             <div className="education">
               <h1>Education</h1>
               <div className="block">
@@ -85,86 +142,19 @@ class Resume extends Component {
                 <p className="location">Passaic County NJ</p>
               </div>
             </div>
-            <div className="work">
-              <h1>Work Experience</h1>
+            <div className="references">
               <div className="wrapper">
+                <h1>References</h1>
                 <div className="block">
-                  <h3>Full Stack Web Developer</h3>
-                  <h5>Ockupy Inc,&nbsp;&nbsp;May 2017 - December 2017</h5>
-                  <p className="location">Edgewater NJ</p>
-                </div>
-                <div className="block">
-                  <h3>Field Technician</h3>
-                  <h5>Databit,&nbsp;&nbsp;Oct. 2016 - April 2017</h5>
-                  <p className="location">Mahwah NJ</p>
+                  <h3>Ivan Baena</h3>
+                  <h5>Front End Developer at Bed Bath &amp; Beyond</h5>
+                  <p>(201)&nbsp;657-9022</p>
                 </div>
                 <div className="block">
-                  <h3>Web Developer Intern</h3>
-                  <h5>Startup52,&nbsp;&nbsp;June - July 2016</h5>
-                  <p className="location">Brooklyn NY</p>
+                  <h3>Moshe Amsel</h3>
+                  <h5>Sales Engineer / Project Manager at Databit</h5>
+                  <p>(845)&nbsp;517-8477</p>
                 </div>
-                <div className="block">
-                  <h3>Deployment Technician</h3>
-                  <h5>Valley National Bank,&nbsp;&nbsp;Dec. 2015 - Apr 2016</h5>
-                  <p className="location">Wayne NJ</p>
-                </div>
-              </div>
-            </div>
-          </div> {/* end exp-wrapper */}
-          <div className="skills-wrapper">
-            <div className="personal">
-              <h1>Personal Skills</h1>
-              <h3><span>Languages</span></h3>
-              <div className="wrapper">
-                <div className="skill">
-                  <span><h2>98</h2></span>
-                  <span className="skill-name">English</span>
-                  <span className="skill-track" style={{ width: '98%' }}></span>
-                </div>
-                <div className="skill">
-                  <span><h2>90</h2></span>
-                  <span className="skill-name">Spanish</span>
-                  <span className="skill-track" style={{ width: '90%' }}></span>
-                </div>
-              </div>
-              <h3><span>Work Skills</span></h3>
-              <div className="wrapper">
-                <div className="skill">
-                  <span><h2>80</h2></span>
-                  <span className="skill-name">Creativity</span>
-                  <span className="skill-track" style={{ width: '80%' }}></span>
-                </div>
-                <div className="skill">
-                  <span><h2>90</h2></span>
-                  <span className="skill-name">Innovate</span>
-                  <span className="skill-track" style={{ width: '90%' }}></span>
-                </div>
-                <div className="skill">
-                  <span><h2>95</h2></span>
-                  <span className="skill-name">Communication</span>
-                  <span className="skill-track" style={{ width: '95%' }}></span>
-                </div>
-              </div>
-            </div>
-            <div className="professional">
-              <h1>Professional Skills</h1>
-              <div className="wrapper">
-                {this.renderSkills()}
-              </div>
-            </div>
-          </div> {/* end skills-wrapper */}
-          <div className="references">
-            <div className="wrapper">
-              <h1>References</h1>
-              <div className="block">
-                <h3>Ivan Baena</h3>
-                <h5>Front End Developer at Bed Bath &amp; Beyond</h5>
-                <p>(201)&nbsp;657-9022</p>
-              </div>
-              <div className="block">
-                <h3>Moshe Amsel</h3>
-                <h5>Sales Engineer / Project Manager at Databit</h5>
-                <p>(845)&nbsp;517-8477</p>
               </div>
             </div>
           </div>
