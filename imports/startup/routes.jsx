@@ -12,11 +12,23 @@ import Blog from '../ui/pages/Blog';
 import { Analytics } from '../ui/components/Dashboard/Analytics';
 import BlogAdmin from '../ui/components/Dashboard/BlogAdmin';
 
+//Avex
+import AvexPage from '../ui/pages/Avex';
+
 //static routes
 FlowRouter.route('/', {
   action() {
     mount(App, {
       content: <Home />
+    });
+  }
+});
+
+//static routes
+FlowRouter.route('/avex', {
+  action() {
+    mount(App, {
+      content: <AvexPage />
     });
   }
 });

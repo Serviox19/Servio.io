@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "AvenirNext-Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url('{}/fonts/AvenirNext-Bold.ttf');
+}
+
+@font-face {
+  font-family: "AvenirNext-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url('{}/fonts/AvenirNext-Medium.ttf');
+}
+
+@font-face {
+  font-family: "AvenirNext-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url('{}/fonts/AvenirNext-Regular.ttf');
+}
+
+.avex-page {
+
+  .preloader  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(33,33,33);
+    height: 100vh;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .top-title {
+      opacity: 0;
+      position: absolute;
+      top: 1em;
+      font-family: AvenirNext-Bold, sans-serif;
+      font-size: 72px;
+    }
+
+    .bottom-text {
+      opacity: 0;
+      position: absolute;
+      bottom: 1em;
+      font-family: AvenirNext-Bold, sans-serif;
+      font-size: 72px;
+    }
+  }
+
+  .fadeout {
+    animation: fadeout .8s forwards;
+    transition: all ease-out;
+  }
+}
+
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none !important;
+  }
+}
