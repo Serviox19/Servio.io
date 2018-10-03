@@ -30,6 +30,25 @@ export default class AvexPage extends Component {
         });
       }, 990)
     }, 5000);
+
+    //scroll reveal
+    $(window).scroll( function(){
+
+      $('.hide-me').each( function(i){
+
+        var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 300;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if( bottom_of_window > bottom_of_object ) {
+
+          $(this).css({
+            opacity:1,
+            transition:'all .7s ease-in-out',
+            top:'0em'
+          });
+        }
+      });
+    });
   }
 
   render() {
@@ -47,11 +66,11 @@ export default class AvexPage extends Component {
                 <img className="left" src="/images/avex/madd-1.png" />
                 <img className="right" src="/images/avex/madd-2.png" />
               </div>
-              <div className="block-2">
+              <div className="block-2 hide-me">
                 <img src="/images/avex/jetson-1.png" />
                 <img src="/images/avex/jetson-2.png" />
               </div>
-              <div className="block-3">
+              <div className="block-3 hide-me">
                 <img src="/images/avex/jetson-m-1.png" />
                 <img src="/images/avex/jetson-m-2.png" />
                 <img src="/images/avex/jetson-m-3.png" />
@@ -63,14 +82,14 @@ export default class AvexPage extends Component {
               <h1 className="title">Recent Work</h1>
               <br />
               <h3 className="subheading">Automatic Locking Phone Mount</h3>
-              <div className="block-1">
+              <div className="block-1 hide-me">
                 <img src="/images/avex/phone-mount-1.png" />
                 <img src="/images/avex/phone-mount-2.png" />
                 <img src="/images/avex/phone-mount-3.png" />
                 <img src="/images/avex/phone-mount-4.png" />
               </div>
               <h3 className="subheading">Sticky Pad</h3>
-              <div className="block-2">
+              <div className="block-2 hide-me">
                 <img src="/images/avex/sticky-1.png" />
                 <img src="/images/avex/sticky-2.png" />
                 <img src="/images/avex/sticky-3.png" />
@@ -83,12 +102,12 @@ export default class AvexPage extends Component {
               <h1 className="title">Currently Working On</h1>
               <br />
               <h3 className="subheading">9H Nano Redesign</h3>
-              <div className="block-1">
+              <div className="block-1 hide-me">
                 <img src="/images/avex/9h-old-1.png" />
                 <img src="/images/avex/9h-old-2.png" />
                 <img src="/images/avex/9h-old-3.png" />
               </div>
-              <div className="block-2">
+              <div className="block-2 hide-me">
                 <img src="/images/avex/9h-new-1.png" />
                 <img src="/images/avex/9h-new-2.png" />
                 <img src="/images/avex/9h-new-3.png" />

@@ -45,7 +45,8 @@ $grey-color: #F2F2F2;
       position: absolute;
       top: 1em;
       font-family: AvenirNext-Bold, sans-serif;
-      font-size: 72px;
+      font-weight: 500;
+      font-size: 60px;
     }
 
     .bottom-text {
@@ -198,6 +199,12 @@ $grey-color: #F2F2F2;
         }
       }
     }
+  }
+
+  .hide-me {
+    opacity: 0;
+    position: relative;
+    top: 10em;
   }
 }
 
